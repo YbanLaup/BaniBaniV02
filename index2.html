@@ -38,7 +38,7 @@
 
     <!-- Droite : Bouton "Portez plainte" -->
     <div class="topbar-right">
-      <a href="plainte.html" class="btn-plainte">
+      <a href="Plainte.html" class="btn-plainte">
         <i class="bi bi-exclamation-triangle-fill me-1"></i> Portez plainte
       </a>
     </div>
@@ -127,6 +127,63 @@
   </div>
 </div>
 
+<!-- ===== À PROPOS ===== -->
+<section id="about" class="about fade-in">
+  <div class="container py-5">
+    <div class="row align-items-center mb-5">
+      <!-- IMAGE -->
+      <div class="col-md-6 mb-4 mb-md-0">
+        <img src="./images/IMG_1356.jpg" alt="À propos de BANI-BANI" class="img-fluid rounded shadow">
+      </div>
+
+      <!-- TEXTE -->
+      <div class="col-md-6">
+        <h2 class="fw-bold mb-3">À propos de BANI-BANI</h2>
+        <p class="lead text-muted">
+          <strong>BANI-BANI</strong> est une institution financière moderne dédiée à l’épargne, au crédit et à la promotion de l’autonomie économique.
+          Nous accompagnons particuliers et entreprises dans la réalisation de leurs ambitions avec rigueur et proximité.
+        </p>
+        <p class="text-muted">
+          Notre objectif est de bâtir une finance inclusive et innovante au service du développement durable et du bien-être collectif.
+        </p>
+      </div>
+    </div>
+
+    <!-- ===== CARTES ===== -->
+    <div class="about-cards d-flex justify-content-center align-items-stretch">
+      <div class="about-item">
+        <div class="about-icon"><i class="fa-solid fa-eye"></i></div>
+        <h4>Notre Vision</h4>
+        <p>
+          Être un acteur de référence dans la microfinance et l’inclusion financière, 
+          en favorisant l’autonomie économique des populations.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="about-item">
+        <div class="about-icon"><i class="fa-solid fa-bullseye"></i></div>
+        <h4>Notre Mission</h4>
+        <p>
+          Offrir des services financiers fiables, simples et accessibles à tous, 
+          tout en soutenant l’innovation et le développement local.
+        </p>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="about-item">
+        <div class="about-icon"><i class="fa-solid fa-hand-holding-heart"></i></div>
+        <h4>Nos Valeurs</h4>
+        <p>
+          Intégrité, proximité, transparence et responsabilité guident chacune de nos actions et décisions.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
   <!-- ======== SERVICES ======== -->
   <section id="services" class="services fade-in">
     <div class="container">
@@ -162,267 +219,223 @@
   </section>
 
   <!-- ======== COUNTERS ======== -->
-  <section class="counters text-center fade-in">
+  <section class="counters-section fade-in">
     <div class="container">
-      <div class="row g-4">
-        <div class="col-md-3"><div class="counter" data-target="1200">0</div><p>Clients</p></div>
-        <div class="col-md-3"><div class="counter" data-target="35">0</div><p>Collecteurs</p></div>
-        <div class="col-md-3"><div class="counter" data-target="450">0</div><p>Crédits traités</p></div>
-        <div class="col-md-3"><div class="counter" data-target="300000">0</div><p>Total épargné (FCFA)</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== ABOUT ======== -->
-  <section id="about" class="about fade-in">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-md-6">
-          <img src="images/IMG_1356.jpg" alt="À propos" class="img-fluid rounded">
-        </div>
-        <div class="col-md-6">
-          <h2>À propos de nous</h2>
-          <p>Notre mission est de rendre les services financiers accessibles, transparents et équitables pour tous. Avec plus de 10 ans d’expérience, nous accompagnons les particuliers et entrepreneurs dans la réalisation de leurs projets.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== ACTUALITÉS ======== -->
-  <section id="actualites" class="fade-in">
-    <div class="container">
-      <h2 class="text-center mb-5">Dernières Actualités</h2>
-      <div class="row" id="actus-container">
-
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm">
-            <img src="./images/006.jpg" class="card-img-top" alt="Actu 1">
-            <div class="card-body">
-              <h5>Nouvelle agence ouverte à Lomé</h5>
-              <p>Nous élargissons notre réseau pour être toujours plus proches de vous.</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
-            </div>
+      <h2 class="text-center mb-5">Nos Statistiques</h2>
+      <div class="row g-4 justify-content-center">
+  
+        <div class="col-md-3">
+          <div class="counter-card">
+            <i class="fas fa-users fa-2x counter-icon"></i>
+            <div class="counter" data-target="1200">0</div>
+            <p>Clients</p>
           </div>
         </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm">
-            <img src="./images/007.jpg" class="card-img-top" alt="Actu 2">
-            <div class="card-body">
-              <h5>Nouvelle agence ouverte à Lomé</h5>
-              <p>Nous élargissons notre réseau pour être toujours plus proches de vous.</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
-            </div>
+  
+        <div class="col-md-3">
+          <div class="counter-card">
+            <i class="fas fa-handshake fa-2x counter-icon"></i>
+            <div class="counter" data-target="35">0</div>
+            <p>Collecteurs</p>
           </div>
         </div>
-
-        <div class="col-md-4 mb-4">
-          <div class="card shadow-sm">
-            <img src="./images/0010.jpg" class="card-img-top" alt="Actu 3">
-            <div class="card-body">
-              <h5>Nouvelle agence ouverte à Lomé</h5>
-              <p>Nous élargissons notre réseau pour être toujours plus proches de vous.</p>
-              <a href="#" class="btn btn-outline-primary btn-sm">Lire plus</a>
-            </div>
+  
+        <div class="col-md-3">
+          <div class="counter-card">
+            <i class="fas fa-coins fa-2x counter-icon"></i>
+            <div class="counter" data-target="450">0</div>
+            <p>Crédits traités</p>
           </div>
         </div>
-
+  
+        <div class="col-md-3">
+          <div class="counter-card">
+            <i class="fas fa-wallet fa-2x counter-icon"></i>
+            <div class="counter" data-target="300000">0</div>
+            <p>Total épargné (FCFA)</p>
+          </div>
+        </div>
+  
       </div>
     </div>
   </section>
 
   <!-- ======== PROGRAMMES & PROJETS ======== -->
-  <section id="programmes" class="programmes py-5 fade-in">
+  <section id="programmes" class="programmes-modern fade-in">
     <div class="container">
       <h2 class="text-center mb-5">Nos Programmes & Projets</h2>
       <div class="row g-4">
-
+  
         <div class="col-md-4">
-          <div class="card shadow border-0 h-100">
-            <img src="./images/IMG_5302.jpg" class="card-img-top" alt="">
-            <div class="card-body text-center">
-              <h5 class="fw-bold">Programme Tontine+</h5>
-              <p>Une initiative pour renforcer l’autonomie financière des membres.</p>
-              <a href="#" class="btn btn-outline-success btn-sm">En savoir plus</a>
+          <div class="card-modern">
+            <div class="card-bg" style="background-image: url('./images/IMG_5302.jpg');"></div>
+            <div class="card-content">
+              <h5>Programme Tontine+</h5>
+              <p>Renforcez l’autonomie financière des membres grâce à notre programme innovant.</p>
+              <a href="#" class="btn-modern">En savoir plus</a>
             </div>
           </div>
         </div>
-
+  
         <div class="col-md-4">
-          <div class="card shadow border-0 h-100">
-            <img src="./images/IMG_5296.jpg" class="card-img-top" alt="">
-            <div class="card-body text-center">
-              <h5 class="fw-bold">Projet Épargne Solidaire</h5>
-              <p>Faciliter l'accès au financement pour les petits entrepreneurs.</p>
-              <a href="#" class="btn btn-outline-success btn-sm">Découvrir</a>
+          <div class="card-modern">
+            <div class="card-bg" style="background-image: url('./images/IMG_5296.jpg');"></div>
+            <div class="card-content">
+              <h5>Projet Épargne Solidaire</h5>
+              <p>Facilitez l'accès au financement pour les petits entrepreneurs et communautés.</p>
+              <a href="#" class="btn-modern">Découvrir</a>
             </div>
           </div>
         </div>
-
+  
         <div class="col-md-4">
-          <div class="card shadow border-0 h-100">
-             <img src="./images/0011.jpg" class="card-img-top" alt="">
-            <div class="card-body text-center">
-              <h5 class="fw-bold">Bani-Bani Jeunes</h5>
-              <p>Un programme dédié aux jeunes pour développer leurs projets.</p>
-              <a href="#" class="btn btn-outline-success btn-sm">Participer</a>
+          <div class="card-modern">
+            <div class="card-bg" style="background-image: url('./images/0011.jpg');"></div>
+            <div class="card-content">
+              <h5>Bani-Bani Jeunes</h5>
+              <p>Un programme dédié aux jeunes pour développer et concrétiser leurs projets.</p>
+              <a href="#" class="btn-modern">Participer</a>
             </div>
           </div>
         </div>
-
+  
       </div>
     </div>
   </section>
-  <!-- ======== NOS OFFRES ======== -->
-  <section id="offres" class="offres py-5 fade-in">
+  
+  <!-- ======== ACTUALITÉS ======== -->
+  <section id="actualites" class="actualites-masonry fade-in">
     <div class="container">
-      <h2 class="text-center mb-5">Nos Offres</h2>
-      <div class="row g-4">
-
-        <div class="col-md-3">
-          <div class="card shadow text-center p-3 h-100">
-            <i class="fa-solid fa-piggy-bank fa-2x text- #0a0241; mb-3"></i>
-            <h6>Compte Épargne</h6>
-            <p>Épargnez chaque jour facilement et en toute sécurité.</p>
-            <button class="btn btn- #0a0241; btn-sm">Voir +...</button>
+      <h2 class="text-center mb-5">Dernières Actualités</h2>
+      <div class="masonry-grid">
+  
+        <div class="actus-card">
+          <img src="./images/006.jpg" alt="Actu 1">
+          <div class="actus-body">
+            <h5>Nouvelle agence ouverte à Lomé</h5>
+            <p>Nous élargissons notre réseau pour être toujours plus proches de vous.</p>
+            <a href="#" class="btn-actus">Lire plus</a>
           </div>
         </div>
-
-        <div class="col-md-3">
-          <div class="card shadow text-center p-3 h-100">
-            <i class="fa-solid fa-briefcase fa-2x text- #0a0241; mb-3"></i>
-            <h6>Crédit PME</h6>
-            <p>Un soutien adapté aux petits et moyens entrepreneurs.</p>
-            <button class="btn btn- #0a0241; btn-sm">Voir +...</button>
+  
+        <div class="actus-card">
+          <img src="./images/007.jpg" alt="Actu 2">
+          <div class="actus-body">
+            <h5>Service digital amélioré</h5>
+            <p>Profitez de nos nouveaux outils numériques pour gérer vos comptes facilement et rapidement.</p>
+            <a href="#" class="btn-actus">Lire plus</a>
           </div>
         </div>
-
-        <div class="col-md-3">
-          <div class="card shadow text-center p-3 h-100">
-            <i class="fa-solid fa-graduation-cap fa-2x text- #0a0241; mb-3"></i>
-            <h6>Jeunes Entrepreneurs</h6>
-            <p>Encourager la jeunesse à entreprendre.</p>
-            <button class="btn btn- #0a0241; btn-sm">Voir +...</button>
+  
+        <div class="actus-card">
+          <img src="./images/0010.jpg" alt="Actu 3">
+          <div class="actus-body">
+            <h5>Programme de formation pour jeunes</h5>
+            <p>Encourageons les jeunes à développer leurs compétences et projets financiers, grâce à nos ateliers.</p>
+            <a href="#" class="btn-actus">Lire plus</a>
           </div>
         </div>
-
-        <div class="col-md-3">
-          <div class="card shadow text-center p-3 h-100">
-            <i class="fa-solid fa-house-user fa-2x text- #0a0241; mb-3"></i>
-            <h6>Projets immobiliers</h6>
-            <p>Accompagnement dans vos projets de construction.</p>
-            <button class="btn btn-green btn-sm">Voir +...</button>
-          </div>
-        </div>
-
+  
+       
       </div>
     </div>
   </section>
-
-  <!-- GALERIE -->
- <!-- ====== GALERIE ====== -->
-<section id="galerie" class="fade-in py-5">
-  <div class="container">
-    <!-- Titre de la section -->
-    <div class="text-center mb-5">
-       <h2 class="text-center mb-5">Galerie</h2>
-    </div>
-
+  
+  
     <!-- Contenu de la galerie -->
-    <div class="row g-4" id="galleryContainer">
-      <!-- Image 1 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Conférence nationale">
-        <div class="gallery-card">
-          <img src="./images/002.JPG" alt="Conférence nationale">
-          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+    <section id="galerie" class="galerie fade-in py-5">
+      <div class="container">
+        <!-- Titre de la section -->
+        <div class="text-center mb-5">
+          <h2>Galerie</h2>
+          <p class="subtitle">Nos événements et projets en images et vidéos</p>
+        </div>
+    
+        <!-- Contenu de la galerie -->
+        <div class="row g-4 gallery-grid">
+    
+          <!-- Carte 1 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Conférence nationale">
+            <div class="gallery-card">
+              <img src="./images/002.JPG" alt="Conférence nationale">
+              <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+          </div>
+    
+          <!-- Carte 2 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Forum régional">
+            <div class="gallery-card">
+              <img src="./images/003.JPG" alt="Forum régional">
+              <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+          </div>
+    
+          <!-- Carte 3 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Journée de la microfinance">
+            <div class="gallery-card">
+              <img src="./images/004.JPG" alt="Journée de la microfinance">
+              <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+          </div>
+    
+          <!-- Carte 4 -->
+          <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Conférence internationale">
+            <div class="gallery-card">
+              <img src="./images/001.JPG" alt="Conférence internationale">
+              <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+          </div>
+    
+          <!-- Carte 5 - vidéo -->
+          <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
+            <div class="gallery-card video-card">
+              <iframe src="./videos/vid1.mp4" title="Vidéo 1" allowfullscreen></iframe>
+              <div class="overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+          </div>
+    
+          <!-- Carte 6 - vidéo -->
+          <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
+            <div class="gallery-card video-card">
+              <iframe src="./videos/vid1.mp4" title="Vidéo 2" allowfullscreen></iframe>
+              <div class="overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+          </div>
+    
+          <!-- Carte 7 - vidéo -->
+          <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
+            <div class="gallery-card video-card">
+              <iframe src="./videos/vid3.mp4" title="Vidéo 3" allowfullscreen></iframe>
+              <div class="overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+          </div>
+    
+          <!-- Carte 8 - vidéo -->
+          <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
+            <div class="gallery-card video-card">
+              <iframe src="./videos/vid4.mp4" title="Vidéo 4" allowfullscreen></iframe>
+              <div class="overlay"><i class="fa-solid fa-play"></i></div>
+            </div>
+          </div>
+    
+        </div>
+    
+        <!-- Bouton Voir plus -->
+        <div class="text-center mt-4">
+          <a href="Album.html" class="btn btn-see-more">Voir plus</a>
         </div>
       </div>
-
-      <!-- Image 2 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Forum régional">
-        <div class="gallery-card">
-          <img src="./images/003.JPG" alt="Forum régional">
-          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
-        </div>
+    
+      <!-- LIGHTBOX -->
+      <div class="lightbox" id="lightbox">
+        <span class="close-btn">&times;</span>
+        <span class="prev-btn"><i class="fa-solid fa-chevron-left"></i></span>
+        <span class="next-btn"><i class="fa-solid fa-chevron-right"></i></span>
+        <img id="lightbox-img" src="" alt="">
+        <div class="caption" id="lightbox-caption"></div>
       </div>
-
-      <!-- Image 3 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Journée de la microfinance">
-        <div class="gallery-card">
-          <img src="./images/004.JPG" alt="Journée de la microfinance">
-          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
-        </div>
-      </div>
-      <!-- Image 3 -->
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Journée de la microfinance">
-        <div class="gallery-card">
-          <img src="./images/001.JPG" alt="Journée de la microfinance">
-          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
-        </div>
-      </div>
-
-      <!-- Vidéo -->
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
-         <div class="gallery-card">
-       <iframe src="./videos/vid2.mp4" title="Vidéo Assemblée Générale" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
-        <div class="gallery-card">
-            <iframe src="./videos/vid1.mp4" title="Vidéo Assemblée Générale" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
-        <div class="gallery-card">
-           <iframe src="./videos/vid3.mp4" title="Vidéo Assemblée Générale" allowfullscreen></iframe>
-        </div>
-      </div>
-      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
-        <div class="gallery-card">
-           <iframe src="./videos/vid4.mp4" title="Vidéo Assemblée Générale" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bouton Voir plus -->
-    <div class="text-center mt-4">
-      <a href="Album.html" class="btn btn-see-more">Voir plus</a>
-    </div>
-  </div>
-
-  <!-- LIGHTBOX -->
-  <div class="lightbox" id="lightbox">
-    <span class="close-btn">&times;</span>
-    <span class="prev-btn"><i class="fa-solid fa-chevron-left"></i></span>
-    <span class="next-btn"><i class="fa-solid fa-chevron-right"></i></span>
-    <img id="lightbox-img" src="" alt="">
-    <div class="caption" id="lightbox-caption"></div>
-  </div>
-</section>
-
-<style>
-  /* Bouton Voir plus personnalisé */
-  .btn-see-more {
-    display: inline-block;
-    padding: 8px 15px;
-    font-size: 1.1rem;
-    font-weight: 500;
-    color: #fff;
-    background: rgba(11, 31, 68, 0.85); /* bleu sombre transparent */
-    border: 1px solid #0B1F44;
-    border-radius: 10px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-  }
-
-  .btn-see-more:hover {
-    background: #0B1F44;
-    color: #fff;
-    transform: scale(1.05);
-    box-shadow: 0 8px 20px rgba(11,31,68,0.4);
-  }
-</style>
-
+    </section>
+  
   <!--Partenaires-->
 
 <section class="partenaires text-center fade-in">
@@ -447,99 +460,149 @@
   </div>
 </section>
 
-
-
-
-
-    <div class="dots">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-  </div>
-</section>
   <!-- ======== TÉMOIGNAGES ======== -->
-  <section class="temoignages fade-in" id="temoignages">
-    <div class="container">
-      <h2 class="text-center mb-5">Ils nous font confiance</h2>
-      <div class="row g-4">
-
-        <div class="col-md-4">
-          <div class="temoignage-card text-center p-4">
-            <i class="fa-solid fa-user-circle fa-3x text-success mb-3"></i>
-            <p>"Grâce à BANI-BANI, j’ai pu lancer mon commerce. Le processus est simple et rapide."</p>
-            <h6>- Awa K.</h6>
+  <section id="temoignages" class="temoignages fade-in py-5">
+    <div class="container d-flex flex-wrap align-items-start temoignages-container">
+  
+      <!-- Partie gauche : message -->
+      <div class="temoignages-left">
+        <h2>Nos bénéficiaires témoignent</h2>
+        <p>
+          Découvrez des exemples de bénéficiaires des projets d’appui coordonnés par la Bani-Bani et leurs histoires de réussite inspirantes.
+        </p>
+      </div>
+  
+      <!-- Trait vertical stylé -->
+      <div class="divider"></div>
+  
+      <!-- Partie droite : sliders -->
+      <div class="temoignages-right">
+        <div class="sliders-temoignages">
+  
+          <!-- Témoignage 1 -->
+          <div class="slides active">
+            <p class="temoignage-text">
+              "Grâce à l'accompagnement de la Bani-Bani, j'ai pu développer mon activité de couture et soutenir ma famille. Leur soutien a été déterminant pour mon succès."
+            </p>
+            <div class="temoignage-client">
+              <img src="./images/client1.jpg" alt="Client 1">
+              <div class="client-info">
+                <h5>Fatoumata S.</h5>
+                <span>Couturière</span>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="temoignage-card text-center p-4">
-            <i class="fa-solid fa-user-circle fa-3x text-success mb-3"></i>
-            <p>"La tontine m’a aidé à mieux gérer mes revenus chaque mois."</p>
-            <h6>- Kossi A.</h6>
+  
+          <!-- Témoignage 2 -->
+          <div class="slides">
+            <p class="temoignage-text">
+              "Le programme de microcrédit m'a permis de lancer mon petit commerce. Aujourd'hui, je peux générer des revenus stables et planifier l'avenir."
+            </p>
+            <div class="temoignage-client">
+              <img src="./images/client2.jpg" alt="Client 2">
+              <div class="client-info">
+                <h5>Amadou K.</h5>
+                <span>Commerçant</span>
+              </div>
+            </div>
           </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="temoignage-card text-center p-4">
-            <i class="fa-solid fa-user-circle fa-3x text-success mb-3"></i>
-            <p>"Une équipe sérieuse et toujours disponible pour nous aider."</p>
-            <h6>- Mireille D.</h6>
+  
+          <!-- Témoignage 3 -->
+          <div class="slides">
+            <p class="temoignage-text">
+              "J'ai pu bénéficier d'une formation et d'un financement adaptés à mon projet agricole. La Bani-Bani m'a accompagné du début à la fin."
+            </p>
+            <div class="temoignage-client">
+              <img src="./images/client3.jpg" alt="Client 3">
+              <div class="client-info">
+                <h5>Hawa D.</h5>
+                <span>Agricultrice</span>
+              </div>
+            </div>
           </div>
+  
+          <!-- Témoignage 4 -->
+          <div class="slides">
+            <p class="temoignage-text">
+              "Grâce aux conseils et au soutien reçus, j'ai pu améliorer mon activité artisanale et développer ma clientèle locale."
+            </p>
+            <div class="temoignage-client">
+              <img src="./images/client4.jpg" alt="Client 4">
+              <div class="client-info">
+                <h5>Issa M.</h5>
+                <span>Artisan</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Témoignage 5 -->
+          <div class="slides">
+            <p class="temoignage-text">
+              "Participer aux programmes de la Bani-Bani a changé ma vie. Je suis plus autonome et confiante dans la gestion de mon activité."
+            </p>
+            <div class="temoignage-client">
+              <img src="./images/client5.jpg" alt="Client 5">
+              <div class="client-info">
+                <h5>Awa B.</h5>
+                <span>Entrepreneure</span>
+              </div>
+            </div>
+          </div>
+  
+          <!-- Navigation -->
+          <button class="prev-slides"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-slides"><i class="fas fa-chevron-right"></i></button>
+  
         </div>
-
       </div>
     </div>
   </section>
-
+  
   <!-- ======== FAQ ======== -->
-  <section class="faq fade-in">
+  <section id="faq" class="faq fade-in py-5">
     <div class="container">
+  
       <h2 class="text-center mb-5">FAQ - Questions fréquentes</h2>
-      <div class="accordion" id="faqAccordion">
-
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
-              Comment ouvrir un compte tontine ?
-            </button>
-          </h2>
-          <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              Vous pouvez ouvrir un compte en vous rendant dans nos agences ou en prenant compte avec une Agent de notre service.
-            </div>
+  
+      <div class="faq-container">
+  
+        <!-- Question 1 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <h5>Comment ouvrir un compte tontine ?</h5>
+            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Vous pouvez ouvrir un compte en vous rendant dans nos agences ou en prenant rendez-vous avec un agent de notre service.</p>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
-              Quels sont les taux d’intérêt ?
-            </button>
-          </h2>
-          <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              Nous ne recevons aucuns taux d'interet sur nos credit. soit 0% de taux d'interret
-            </div>
+  
+        <!-- Question 2 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <h5>Quels sont les taux d’intérêt ?</h5>
+            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Nous ne recevons aucun taux d'intérêt sur nos crédits, soit 0% de taux d'intérêt.</p>
           </div>
         </div>
-
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
-              Comment contacter l’équipe ?
-            </button>
-          </h2>
-          <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-            <div class="accordion-body">
-              Vous pouvez nous joindre via téléphone, email ou WhatsApp 7j/7.
-            </div>
+  
+        <!-- Question 3 -->
+        <div class="faq-item">
+          <div class="faq-question">
+            <h5>Comment contacter l’équipe ?</h5>
+            <span class="faq-toggle"><i class="fas fa-chevron-down"></i></span>
+          </div>
+          <div class="faq-answer">
+            <p>Vous pouvez nous joindre via téléphone, email ou WhatsApp 7j/7.</p>
           </div>
         </div>
-
+  
       </div>
     </div>
   </section>
+  
 
  
 
@@ -695,6 +758,44 @@ window.addEventListener('scroll', () => {
 </script>
 <script src="img.js"></script>
 
+<script>
+  const faqItems = document.querySelectorAll('.faq-item');
 
+faqItems.forEach(item => {
+  const question = item.querySelector('.faq-question');
+  question.addEventListener('click', () => {
+    item.classList.toggle('active');
+  });
+});
+
+</script>
+<script>
+  const slides = document.querySelectorAll('.slides');
+const next = document.querySelector('.next-slides');
+const prev = document.querySelector('.prev-slide');
+let current = 0;
+
+function showSlides(index) {
+  slides.forEach(slides => slides.classList.remove('active'));
+  slides[index].classList.add('active');
+}
+
+next.addEventListener('click', () => {
+  current = (current + 1) % slides.length;
+  showSlides(current);
+});
+
+prev.addEventListener('click', () => {
+  current = (current - 1 + slides.length) % slides.length;
+  showSlide(current);
+});
+
+// Auto-slide
+setInterval(() => {
+  current = (current + 1) % slides.length;
+  showSlides(current);
+}, 10000);
+
+</script>
 </body>
 </html>
