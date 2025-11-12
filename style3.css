@@ -399,7 +399,7 @@ body {
 /* ===== ABOUT SECTION ===== */
 .about {
   background: linear-gradient(to bottom right, #f5f7fb, #eef1f6);
-  padding: 80px 0;
+
 }
 
 .about h2 {
@@ -479,6 +479,8 @@ body {
   padding: 80px 0;
   color: #fff;
   text-align: center;
+   box-shadow: 0 20px 30px #fff;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 .counters-section h2 {
