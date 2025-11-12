@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Microfinance - solutions financières adaptées, crédits, épargne, services innovants.">
+  <title>Microfinance - Votre partenaire de confiance</title>
+  
+  <!-- Bootstrap & Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="style3.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <!-- Gauche : Date du jour -->
+    <div class="topbar-left" id="current-date"></div>
+
+    <!-- Centre : Bande d'annonce -->
+    <div class="topbar-center text-center">
+      <div class="annonce-container">
+        <div class="annonce-track">
+          <a href="actualites.html#recrutement" class="annonce">Annonce rapide : Bani Bani recrute un stagiaire !</a>
+          <a href="actualites.html#offre" class="annonce">Nouveau service : ouverture de compte en ligne simplifiée.</a>
+          <a href="actualites.html#evenement" class="annonce">Participez à notre forum économique ce vendredi.</a>
+          <a href="actualites.html#promotion" class="annonce">Promotion spéciale : crédits à taux réduit jusqu’à fin du mois.</a>
+          <a href="actualites.html#innovation" class="annonce">Découvrez notre nouvelle application mobile Bani Bani Pro.</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Droite : Bouton "Portez plainte" -->
+    <div class="topbar-right">
+      <a href="plainte.html" class="btn-plainte">
+        <i class="bi bi-exclamation-triangle-fill me-1"></i> Portez plainte
+      </a>
+    </div>
+  </div>
+</div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index2.html">
+      <img src="./images/WhatsApp Image 2025-10-12 at 10.35.02.jpeg" alt="Logo" width="500" height="500" class="me-2">
+      BANI-BANI
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="index2.html">Accueil</a></li>
+
+        <!-- À PROPOS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="About.html" id="aproposDropdown" role="button" data-bs-toggle="dropdown">
+            À propos
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+            <li><a class="dropdown-item" href="About.html">Présentation</a></li>
+            <li><a class="dropdown-item" href="About.html#presentation">Organes statutaires</a></li>
+            <li><a class="dropdown-item" href="About.html#direction">Direction Générale</a></li>
+            <li><a class="dropdown-item" href="About.html#equipe">Équipe</a></li>
+            <li><a class="dropdown-item" href="About.html">Vision</a></li>
+            <li><a class="dropdown-item" href="About.html#faq">Questions fréquentes</a></li>
+            <li><a class="dropdown-item" href="About.html#partenaire">Partenaires</a></li>
+            <li><a class="dropdown-item" href="Album.html">Galerie</a></li>
+          </ul>
+        </li>
+
+        <!-- AGENCES -->
+        <li class="nav-item"><a class="nav-link text-white" href="NosAgence.html">Nos Agences</a></li>
+        </li>
+
+        <!-- ACTUALITÉS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="actualitesDropdown" role="button" data-bs-toggle="dropdown">
+            Actualités
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+            <li><a class="dropdown-item" href="News.html#actualites">Actualités</a></li>
+            <li><a class="dropdown-item" href="News.html#actualites">Appels d'offres</a></li>
+            <li><a class="dropdown-item" href="News.html#stage">Emplois / Stages</a></li>
+            <li><a class="dropdown-item" href="News.html#evenement">Événements</a></li>
+            <li><a class="dropdown-item" href="News.html#evenement">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <style>
+    #faq-agences .accordion-button {
+    background-color: #0B1F44;
+    color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 1rem 1.25rem;
+  }
+
+  #faq-agences .accordion-button:not(.collapsed) {
+    background-color: #00AEEF;
+    color: #fff;
+  }
+
+  #faq-agences .accordion-body {
+    background-color: #f8f9fa;
+    color: #0B1F44;
+    padding: 1rem 1.25rem;
+    font-size: 0.95rem;
+  }
+
+  #faq-agences h2 {
+    letter-spacing: 0.5px;
+  }
+    /* ===== CARTE ===== */
+    #map {
+      height: 200px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    /* ===== SECTION AGENCES ===== */
+    .agence-card {
+      background: rgba(11, 31, 68, 0.9);
+      color: white;
+      border-radius: 10px;
+      padding: 25px;
+      text-align: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+    .agence-card:hover {
+      background: rgba(0, 174, 239, 0.9);
+      transform: translateY(-5px);
+    }
+    .agence-card img {
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+    .agence-card h4 {
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+    .agence-card p {
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    .agence-card .btn {
+      background-color: rgba(11, 31, 68, 0.9);
+      color: #fff;
+      border: none;
+      transition: background 0.3s;
+    }
+    .agence-card .btn:hover {
+      background-color: rgba(11, 31, 68, 0.9);
+    }
+
+    /* Section info */
+    .section-intro {
+      text-align: center;
+      max-width: 700px;
+      margin: auto;
+      color: #333;
+      margin-bottom: 40px;
+      font-size: 1,5rem;
+    }
+    .section-intro p {
+      color: #0B1F44;
+      font-size: 5px;
+    }
+  </style>
+  <!-- ======== HERO ======== -->
+  <section class="hero-section d-flex align-items-center justify-content-center text-center"
+  style="background: url('./images/F2.jpg') center/cover no-repeat; height: 60vh; position: relative;">
+    <div class="overlay" style="position:absolute; inset:0; background: rgba(0,0,0,0.6);"></div>
+    <div class="container position-relative text-white">
+      <h1 class="fw-bold display-4">Nos Agences</h1>
+      <p class="lead">Découvrez où nous sommes présents à travers le pays</p>
+    </div>
+  </section>
+
+  <!-- ======== INTRO ======== -->
+  <section class="section-intro container py-5">
+    <h2 class="fw-bold text-dark">BANI-BANI partout près de vous</h2>
+    <p>
+      BANI-BANI est présent sur l’ensemble du territoire national avec des agences modernes et accessibles.
+      Que vous soyez à Lomé, Kara ou Sokodé, nos conseillers vous accueillent pour vous offrir des solutions
+      adaptées à vos besoins financiers.
+    </p>
+  </section>
+
+  <!-- ======== SIÈGE SOCIAL ======== -->
+<section id="siege-social" class="py-5">
+  <div class="container">
+    <div class="row align-items-center g-4">
+      <!-- Carte/image à gauche -->
+      <div class="col-md-6">
+        <img src="./images/F3.jpg" alt="Siège Social" class="img-fluid rounded shadow">
+      </div>
+      
+      <!-- Description à droite -->
+      <div class="col-md-6 d-flex flex-column justify-content-center">
+        <h2 class="fw-bold mb-3" style="color:#0B1F44;">Siège Social</h2>
+        <p style="font-size:1rem; color:#333;">
+          Notre siège social est situé au cœur de Lomé. C’est ici que sont coordonnés tous nos services et que se prennent les décisions stratégiques pour l’ensemble du réseau BANI-BANI.
+        </p>
+        <ul class="list-unstyled mb-3" style="color:#0B1F44;">
+          <li><strong>Adresse :</strong> 45 Rue de la Banque, Lomé, Togo</li>
+          <li><strong>Téléphone :</strong> +228 90 11 22 33</li>
+          <li><strong>Email :</strong> siege@banibani.tg</li>
+          <li><strong>Heures d'ouverture :</strong> Lun-Ven : 8h - 18h</li>
+        </ul>
+        <a href="https://www.google.com/maps?q=6.130,1.222" target="_blank" class="btn btn-primary mt-2" style="background-color: #0B1F44; border:none;">
+          <i class="fa-solid fa-map-location-dot me-1"></i> Voir sur la carte
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  <!-- ======== LISTE DES AGENCES ======== -->
+  <section class="py-5 container">
+    <h2 class="fw-bold mb-3" style="color:#0B1F44; text-align:center; margin-bottom: 15px;">Annexes & Point focaux</h2>
+    <div class="row g-4">
+      <!-- Exemple d'une agence -->
+      <div class="col-md-4">
+        <div class="agence-card">
+          <img src="./images/F1.jpg" alt="Agence Akwadésséwa">
+          <h4>Akwadésséwa</h4>
+          <p><strong>Adresse :</strong> Rue 210, Lomé, Togo</p>
+          <p><strong>Téléphone :</strong> +228 90 11 22 33</p>
+          <p><strong>Email :</strong> akwadess@banibani.tg</p>
+          <p><strong>Heures d'ouverture :</strong> Lun-Ven : 8h - 17h30</p>
+          <a href="https://www.google.com/maps?q=6.142,1.252" target="_blank" class="btn btn-sm mt-2">
+            <i class="fa-solid fa-map-location-dot"></i> Voir l’itinéraire
+          </a>
+        </div>
+      </div>
+
+      <!-- Duplique pour les autres -->
+      <div class="col-md-4">
+        <div class="agence-card">
+          <img src="./images/3.jpg" alt="Agence Agoè Zongo">
+          <h4>Agoè Zongo</h4>
+          <p><strong>Adresse :</strong> Carrefour Zongo, Lomé</p>
+          <p><strong>Téléphone :</strong> +228 91 44 55 66</p>
+          <p><strong>Email :</strong> agoe@banibani.tg</p>
+          <p><strong>Heures d'ouverture :</strong> Lun-Sam : 8h - 16h</p>
+          <a href="https://www.google.com/maps?q=6.25,1.21" target="_blank" class="btn btn-sm mt-2">
+            <i class="fa-solid fa-map-location-dot"></i> Voir l’itinéraire
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="agence-card">
+          <img src="./images/2.jpg" alt="Agence Zanguéra">
+          <h4>Zanguéra</h4>
+          <p><strong>Adresse :</strong> Route de Kpalimé, Lomé</p>
+          <p><strong>Téléphone :</strong> +228 93 77 88 99</p>
+          <p><strong>Email :</strong> zanguera@banibani.tg</p>
+          <p><strong>Heures d'ouverture :</strong> Lun-Ven : 8h - 17h</p>
+          <a href="https://www.google.com/maps?q=6.26,1.11" target="_blank" class="btn btn-sm mt-2">
+            <i class="fa-solid fa-map-location-dot"></i> Voir l’itinéraire
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="agence-card">
+          <img src="./images/1.jpg" alt="Agence Avedji">
+          <h4>Avedji</h4>
+          <p><strong>Adresse :</strong> Marché Avedji, Lomé</p>
+          <p><strong>Téléphone :</strong> +228 96 22 33 44</p>
+          <p><strong>Email :</strong> avedji@banibani.tg</p>
+          <p><strong>Heures d'ouverture :</strong> Lun-Sam : 8h - 16h30</p>
+          <a href="https://www.google.com/maps?q=6.18,1.22" target="_blank" class="btn btn-sm mt-2">
+            <i class="fa-solid fa-map-location-dot"></i> Voir l’itinéraire
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="agence-card">
+          <img src="./images/ESA-3.jpg" alt="Agence Kara">
+          <h4>Kara</h4>
+          <p><strong>Adresse :</strong> Quartier Lama-Kara, Kara</p>
+          <p><strong>Téléphone :</strong> +228 92 55 66 77</p>
+          <p><strong>Email :</strong> kara@banibani.tg</p>
+          <p><strong>Heures d'ouverture :</strong> Lun-Ven : 8h - 17h</p>
+          <a href="https://www.google.com/maps?q=9.55,1.18" target="_blank" class="btn btn-sm mt-2">
+            <i class="fa-solid fa-map-location-dot"></i> Voir l’itinéraire
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="agence-card">
+          <img src="./images/images.jpg" alt="Agence Sokodé">
+          <h4>Sokodé</h4>
+          <p><strong>Adresse :</strong> Avenue du Marché, Sokodé</p>
+          <p><strong>Téléphone :</strong> +228 93 44 55 22</p>
+          <p><strong>Email :</strong> sokode@banibani.tg</p>
+          <p><strong>Heures d'ouverture :</strong> Lun-Ven : 8h - 17h</p>
+          <a href="https://www.google.com/maps?q=8.98,1.13" target="_blank" class="btn btn-sm mt-2">
+            <i class="fa-solid fa-map-location-dot"></i> Voir l’itinéraire
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+   <!-- ======== FAQ - Nos Agences ======== -->
+<section id="faq-agences" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold" style="color:#0B1F44;">Questions fréquentes</h2>
+    
+    <div class="accordion" id="faqAgencesAccordion">
+
+      <!-- Question 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeading1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse1" aria-expanded="false" aria-controls="faqCollapse1">
+            Quels sont les horaires d’ouverture des agences ?
+          </button>
+        </h2>
+        <div id="faqCollapse1" class="accordion-collapse collapse" aria-labelledby="faqHeading1" data-bs-parent="#faqAgencesAccordion">
+          <div class="accordion-body">
+            La plupart de nos agences sont ouvertes du lundi au vendredi de 8h à 17h, certaines jusqu’à 16h le samedi. Vérifiez l’agence spécifique pour les horaires exacts.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeading2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse2" aria-expanded="false" aria-controls="faqCollapse2">
+            Comment puis-je contacter une agence spécifique ?
+          </button>
+        </h2>
+        <div id="faqCollapse2" class="accordion-collapse collapse" aria-labelledby="faqHeading2" data-bs-parent="#faqAgencesAccordion">
+          <div class="accordion-body">
+            Vous pouvez trouver les coordonnées (téléphone, email) de chaque agence directement sur notre page "Nos Agences" et utiliser le bouton "Voir sur la carte" pour vous rendre à l’agence.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeading3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse3" aria-expanded="false" aria-controls="faqCollapse3">
+            Quels services sont disponibles dans toutes les agences ?
+          </button>
+        </h2>
+        <div id="faqCollapse3" class="accordion-collapse collapse" aria-labelledby="faqHeading3" data-bs-parent="#faqAgencesAccordion">
+          <div class="accordion-body">
+            Toutes nos agences proposent l’ouverture de compte, les services de crédit, d’épargne et le conseil aux clients. Certains services spécialisés peuvent être disponibles uniquement dans certaines agences.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeading4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+            Puis-je prendre rendez-vous à l’avance ?
+          </button>
+        </h2>
+        <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4" data-bs-parent="#faqAgencesAccordion">
+          <div class="accordion-body">
+            Oui, vous pouvez contacter votre agence par téléphone ou email pour planifier un rendez-vous avec un conseiller.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+ <!-- ======== FOOTER ======== -->
+<footer class="footer-section">
+    <div class="container footer-content">
+        <!-- SECTION 1: À propos -->
+        <div class="footer-col about-footer">
+            <h3>BANI-BANI</h3>
+            <p>Votre partenaire de confiance pour l’épargne, le crédit et le développement de projets financiers. Nous accompagnons particuliers et entrepreneurs dans la réalisation de leurs projets.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- SECTION 2: Liens rapides -->
+        <div class="footer-col quick-links">
+            <h3>Liens rapides</h3>
+            <ul class="footer-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- SECTION 3: Nos services -->
+        <div class="footer-col services-footer">
+            <h3>Nos services</h3>
+            <ul class="footer-links">
+                <li><a href="#">Épargne</a></li>
+                <li><a href="#">Crédit</a></li>
+                <li><a href="#">Tontine Jeunes</a></li>
+                <li><a href="#">Projets immobiliers</a></li>
+            </ul>
+        </div>
+
+        <!-- SECTION 4: Newsletter -->
+        <div class="footer-col newsletter-footer">
+            <h3>Newsletter</h3>
+            <p>Inscrivez-vous pour recevoir nos actualités et conseils financiers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2025 BANI-BANI. Tous droits réservés.
+    </div>
+</footer>
+
+
+ 
+
+  <!-- ======== SCRIPTS ======== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Animation fade-in au scroll
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    });
+    elements.forEach(el => observer.observe(el));
+
+    // Animation compteur
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      counter.innerText = '0';
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / 200;
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCounter, 10);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+  </script>
+ <script>
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Script pour afficher automatiquement la date -->
+<script>
+  const dateEl = document.getElementById("current-date");
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const today = new Date().toLocaleDateString('fr-FR', options);
+  dateEl.textContent = today.charAt(0).toUpperCase() + today.slice(1);
+</script>
+
+
+</body>
+</html>

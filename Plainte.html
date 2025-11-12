@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Microfinance - solutions financières adaptées, crédits, épargne, services innovants.">
+  <title>Microfinance - Votre partenaire de confiance</title>
+  
+  <!-- Bootstrap & Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="style3.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <!-- Gauche : Date du jour -->
+    <div class="topbar-left" id="current-date"></div>
+
+    <!-- Centre : Bande d'annonce -->
+    <div class="topbar-center text-center">
+      <div class="annonce-container">
+        <div class="annonce-track">
+          <a href="actualites.html#recrutement" class="annonce">Annonce rapide : Bani Bani recrute un stagiaire !</a>
+          <a href="actualites.html#offre" class="annonce">Nouveau service : ouverture de compte en ligne simplifiée.</a>
+          <a href="actualites.html#evenement" class="annonce">Participez à notre forum économique ce vendredi.</a>
+          <a href="actualites.html#promotion" class="annonce">Promotion spéciale : crédits à taux réduit jusqu’à fin du mois.</a>
+          <a href="actualites.html#innovation" class="annonce">Découvrez notre nouvelle application mobile Bani Bani Pro.</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Droite : Bouton "Portez plainte" -->
+    <div class="topbar-right">
+      <a href="plainte.html" class="btn-plainte">
+        <i class="bi bi-exclamation-triangle-fill me-1"></i> Portez plainte
+      </a>
+    </div>
+  </div>
+</div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index2.html">
+      <img src="./images/WhatsApp Image 2025-10-12 at 10.35.02.jpeg" alt="Logo" width="500" height="500" class="me-2">
+      BANI-BANI
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="index2.html">Accueil</a></li>
+
+        <!-- À PROPOS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="About.html" id="aproposDropdown" role="button" data-bs-toggle="dropdown">
+            À propos
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+            <li><a class="dropdown-item" href="About.html">Présentation</a></li>
+            <li><a class="dropdown-item" href="About.html#presentation">Organes statutaires</a></li>
+            <li><a class="dropdown-item" href="About.html#direction">Direction Générale</a></li>
+            <li><a class="dropdown-item" href="About.html#equipe">Équipe</a></li>
+            <li><a class="dropdown-item" href="About.html">Vision</a></li>
+            <li><a class="dropdown-item" href="About.html#faq">Questions fréquentes</a></li>
+            <li><a class="dropdown-item" href="About.html#partenaire">Partenaires</a></li>
+            <li><a class="dropdown-item" href="Album.html">Galerie</a></li>
+          </ul>
+        </li>
+
+        <!-- AGENCES -->
+        <li class="nav-item"><a class="nav-link text-white" href="NosAgence.html">Nos Agences</a></li>
+        </li>
+
+        <!-- ACTUALITÉS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="actualitesDropdown" role="button" data-bs-toggle="dropdown">
+            Actualités
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+            <li><a class="dropdown-item" href="News.html#actualites">Actualités</a></li>
+            <li><a class="dropdown-item" href="News.html#actualites">Appels d'offres</a></li>
+            <li><a class="dropdown-item" href="News.html#stage">Emplois / Stages</a></li>
+            <li><a class="dropdown-item" href="News.html#evenement">Événements</a></li>
+            <li><a class="dropdown-item" href="News.html#evenement">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <style>
+    /* ===== Hero ===== */
+    .hero-plainte {
+      background: url('./images/ESA-3.jpg') center/cover no-repeat;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      color: white;
+    }
+    .hero-plainte .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-plainte h1 {
+      position: relative;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+    .hero-plainte p {
+      position: relative;
+      font-size: 1.2rem;
+    }
+
+    /* ===== Formulaire Plainte ===== */
+    .plainte-section {
+      padding: 80px 0;
+      background: #f4f4f9;
+    }
+    .plainte-section h3{
+      font-size:40px;
+      text-align: center;
+    }
+    .plainte-container {
+      max-width: 900px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+   
+    .plainte-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .plainte-text h2 {
+      color: #0B1F44;
+      margin-bottom: 20px;
+    
+    }
+    .plainte-text p {
+      color: #555;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .plainte-form input,
+    .plainte-form select,
+    .plainte-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 0.95rem;
+    }
+    .plainte-form button {
+      background-color: #0B1F44;
+      color: #fff;
+      border: none;
+      padding: 12px 25px;
+      border-radius: 6px;
+      font-size: 1rem;
+      transition: background 0.3s;
+    }
+    .plainte-form button:hover {
+      background-color: #00AEEF;
+    }
+
+    @media (max-width: 768px) {
+      .plainte-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+<body>
+
+<!-- ===== HERO ===== -->
+<section class="hero-plainte">
+  <div class="overlay"></div>
+  <div class="container">
+    <h1>Portez votre plainte en toute sécurité</h1>
+    <p>Remplissez le formulaire ci-dessous. Votre plainte sera traitée de manière **confidentielle** par notre équipe.</p>
+  </div>
+</section>
+
+<!-- ===== FORMULAIRE PLAINTE ===== -->
+<section class="plainte-section">
+
+<h3>Renseignez ici !</h3>
+  <div class="plainte-container">
+    
+    <!-- Texte rassurant -->
+    <div class="plainte-text">
+      <h2>Votre plainte est importante pour nous</h2>
+      <p>Chez BANI-BANI, nous nous engageons à traiter chaque plainte avec sérieux et confidentialité. 
+         Que votre préoccupation concerne nos services, un employé ou un autre sujet, nous veillons à ce que vos informations soient sécurisées et traitées avec discrétion.
+      </p>
+      <p>Remplissez le formulaire à côté et notre équipe vous contactera rapidement.</p>
+    </div>
+
+    <!-- Formulaire -->
+    <div class="plainte-form">
+      <form action="#" method="POST">
+        <input type="text" name="nom" placeholder="Nom complet" required>
+        <input type="email" name="email" placeholder="Adresse email" required>
+        <input type="tel" name="telephone" placeholder="Numéro de téléphone" required>
+        <select name="type" required>
+          <option value="">Type de plainte</option>
+          <option value="service">Service</option>
+          <option value="employe">Employé</option>
+          <option value="autre">Autre</option>
+        </select>
+        <textarea name="message" rows="6" placeholder="Décrivez votre plainte..." required></textarea>
+        <button type="submit"><i class="fa-solid fa-paper-plane me-1"></i> Envoyer ma plainte</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer-section">
+  <div class="container footer-content">
+      <div class="footer-col about-footer">
+          <h3>BANI-BANI</h3>
+          <p>Votre partenaire de confiance pour l’épargne, le crédit et le développement de projets financiers.</p>
+          <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+          </div>
+      </div>
+      <div class="footer-col quick-links">
+          <h3>Liens rapides</h3>
+          <ul class="footer-links">
+              <li><a href="#services">Services</a></li>
+              <li><a href="#about">À propos</a></li>
+              <li><a href="#galerie">Galerie</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </div>
+      <div class="footer-col services-footer">
+          <h3>Nos services</h3>
+          <ul class="footer-links">
+              <li><a href="#">Épargne</a></li>
+              <li><a href="#">Crédit</a></li>
+              <li><a href="#">Tontine Jeunes</a></li>
+              <li><a href="#">Projets immobiliers</a></li>
+          </ul>
+      </div>
+      <div class="footer-col newsletter-footer">
+          <h3>Newsletter</h3>
+          <p>Inscrivez-vous pour recevoir nos actualités et conseils financiers.</p>
+          <form class="newsletter-form">
+              <input type="email" placeholder="Votre email" required>
+              <button type="submit">S'inscrire</button>
+          </form>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      &copy; 2025 BANI-BANI. Tous droits réservés.
+  </div>
+</footer>
+<!-- Script pour afficher automatiquement la date -->
+<script>
+  const dateEl = document.getElementById("current-date");
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const today = new Date().toLocaleDateString('fr-FR', options);
+  dateEl.textContent = today.charAt(0).toUpperCase() + today.slice(1);
+</script>
+<!-- ===== SCRIPTS ===== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

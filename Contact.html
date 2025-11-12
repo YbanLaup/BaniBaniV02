@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Microfinance - solutions financières adaptées, crédits, épargne, services innovants.">
+  <title>Microfinance - Votre partenaire de confiance</title>
+  
+  <!-- Bootstrap & Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="style3.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <!-- Gauche : Date du jour -->
+    <div class="topbar-left" id="current-date"></div>
+
+    <!-- Centre : Bande d'annonce -->
+    <div class="topbar-center text-center">
+      <div class="annonce-container">
+        <div class="annonce-track">
+          <a href="actualites.html#recrutement" class="annonce">Annonce rapide : Bani Bani recrute un stagiaire !</a>
+          <a href="actualites.html#offre" class="annonce">Nouveau service : ouverture de compte en ligne simplifiée.</a>
+          <a href="actualites.html#evenement" class="annonce">Participez à notre forum économique ce vendredi.</a>
+          <a href="actualites.html#promotion" class="annonce">Promotion spéciale : crédits à taux réduit jusqu’à fin du mois.</a>
+          <a href="actualites.html#innovation" class="annonce">Découvrez notre nouvelle application mobile Bani Bani Pro.</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Droite : Bouton "Portez plainte" -->
+    <div class="topbar-right">
+      <a href="plainte.html" class="btn-plainte">
+        <i class="bi bi-exclamation-triangle-fill me-1"></i> Portez plainte
+      </a>
+    </div>
+  </div>
+</div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index2.html">
+      <img src="./images/WhatsApp Image 2025-10-12 at 10.35.02.jpeg" alt="Logo" width="500" height="500" class="me-2">
+      BANI-BANI
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="index2.html">Accueil</a></li>
+
+        <!-- À PROPOS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="About.html" id="aproposDropdown" role="button" data-bs-toggle="dropdown">
+            À propos
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+            <li><a class="dropdown-item" href="About.html">Présentation</a></li>
+            <li><a class="dropdown-item" href="About.html#presentation">Organes statutaires</a></li>
+            <li><a class="dropdown-item" href="About.html#direction">Direction Générale</a></li>
+            <li><a class="dropdown-item" href="About.html#equipe">Équipe</a></li>
+            <li><a class="dropdown-item" href="About.html">Vision</a></li>
+            <li><a class="dropdown-item" href="About.html#faq">Questions fréquentes</a></li>
+            <li><a class="dropdown-item" href="About.html#partenaire">Partenaires</a></li>
+            <li><a class="dropdown-item" href="Album.html">Galerie</a></li>
+          </ul>
+        </li>
+
+        <!-- AGENCES -->
+        <li class="nav-item"><a class="nav-link text-white" href="NosAgence.html">Nos Agences</a></li>
+        </li>
+
+        <!-- ACTUALITÉS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="actualitesDropdown" role="button" data-bs-toggle="dropdown">
+            Actualités
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+            <li><a class="dropdown-item" href="News.html#actualites">Actualités</a></li>
+            <li><a class="dropdown-item" href="News.html#actualites">Appels d'offres</a></li>
+            <li><a class="dropdown-item" href="News.html#stage">Emplois / Stages</a></li>
+            <li><a class="dropdown-item" href="News.html#evenement">Événements</a></li>
+            <li><a class="dropdown-item" href="News.html#evenement">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <style>
+    /* ===== Hero ===== */
+    .hero-contact {
+      background: url('./images/contact-hero.jpg') center/cover no-repeat;
+      height: 50vh;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero-contact .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+    }
+    .hero-contact h1 {
+      position: relative;
+      font-size: 3rem;
+      font-weight: 700;
+    }
+
+    /* ===== Formulaire ===== */
+    .contact-form .form-control {
+      border-radius: 5px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 1px solid #0B1F44;
+    }
+    .contact-form button {
+      background-color: #0B1F44;
+      color: #fff;
+      border: none;
+      padding: 0.75rem 2rem;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .contact-form button:hover {
+      background-color: #00AEEF;
+    }
+
+    /* ===== Informations ===== */
+    .contact-info h4 {
+      color: #0B1F44;
+      margin-bottom: 15px;
+    }
+    .contact-info p {
+      color: #333;
+      margin-bottom: 10px;
+    }
+
+    /* ===== Carte ===== */
+    #map {
+      height: 300px;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      margin-top: 20px;
+    }
+  </style>
+<body>
+
+  <!-- ======== HERO ======== -->
+ <section class="hero-section d-flex align-items-center justify-content-center text-center"
+  style="background: url('./images/F2.jpg') center/cover no-repeat; height: 60vh; position: relative;">
+    <div class="overlay" style="position:absolute; inset:0; background: rgba(0,0,0,0.6);"></div>
+    <div class="container position-relative text-white">
+      <h1 class="fw-bold display-4">Nous contacter</h1>
+      <p class="lead">Découvrez où nous sommes présents à travers le pays</p>
+    </div>
+  </section>
+  <!-- ======== CONTACT FORM & INFO ======== -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Formulaire -->
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-4" style="color:#0B1F44;">Envoyez-nous un message</h2>
+          <form class="contact-form">
+            <input type="text" class="form-control" placeholder="Nom complet" required>
+            <input type="email" class="form-control" placeholder="Email" required>
+            <input type="text" class="form-control" placeholder="Sujet" required>
+            <textarea class="form-control" rows="6" placeholder="Votre message" required></textarea>
+            <button type="submit"><i class="fa-solid fa-paper-plane me-1"></i> Envoyer</button>
+          </form>
+        </div>
+
+        <!-- Informations de contact -->
+        <div class="col-md-6 contact-info">
+          <h2 class="fw-bold mb-4" style="color:#0B1F44;">Nos Coordonnées</h2>
+          <h4>Adresse</h4>
+          <p>45 Rue de la Banque, Lomé, Togo</p>
+
+          <h4>Téléphone</h4>
+          <p>+228 90 11 22 33</p>
+
+          <h4>Email</h4>
+          <p>contact@banibani.tg</p>
+
+          <h4>Horaires</h4>
+          <p>Lundi - Vendredi : 8h - 18h</p>
+          <p>Samedi : 8h - 16h</p>
+
+          <!-- Carte Google Maps -->
+          <div id="map"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FAQ courte ======== -->
+  <section id="faq-contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Questions fréquentes</h2>
+
+      <div class="accordion" id="faqContactAccordion">
+
+        <!-- Question 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqC1">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCC1" aria-expanded="false" aria-controls="faqCC1">
+              Combien de temps pour recevoir une réponse ?
+            </button>
+          </h2>
+          <div id="faqCC1" class="accordion-collapse collapse" aria-labelledby="faqC1" data-bs-parent="#faqContactAccordion">
+            <div class="accordion-body">
+              Nous répondons généralement dans les 24 à 48 heures ouvrables.
+            </div>
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="faqC2">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCC2" aria-expanded="false" aria-controls="faqCC2">
+              Puis-je contacter une agence directement ?
+            </button>
+          </h2>
+          <div id="faqCC2" class="accordion-collapse collapse" aria-labelledby="faqC2" data-bs-parent="#faqContactAccordion">
+            <div class="accordion-body">
+              Oui, vous pouvez utiliser les coordonnées de chaque agence disponibles sur notre page "Nos Agences".
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer-section">
+      <div class="container footer-content">
+          <div class="footer-col about-footer">
+              <h3>BANI-BANI</h3>
+              <p>Votre partenaire de confiance pour l’épargne, le crédit et le développement de projets financiers.</p>
+              <div class="social-links">
+                  <a href="#"><i class="fab fa-facebook-f"></i></a>
+                  <a href="#"><i class="fab fa-twitter"></i></a>
+                  <a href="#"><i class="fab fa-instagram"></i></a>
+              </div>
+          </div>
+          <div class="footer-col quick-links">
+              <h3>Liens rapides</h3>
+              <ul class="footer-links">
+                  <li><a href="index.html#services">Services</a></li>
+                  <li><a href="Apropos.html">À propos</a></li>
+                  <li><a href="index.html#galerie">Galerie</a></li>
+                  <li><a href="contacter.html">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-col services-footer">
+              <h3>Nos services</h3>
+              <ul class="footer-links">
+                  <li><a href="#">Épargne</a></li>
+                  <li><a href="#">Crédit</a></li>
+                  <li><a href="#">Tontine Jeunes</a></li>
+                  <li><a href="#">Projets immobiliers</a></li>
+              </ul>
+          </div>
+          <div class="footer-col newsletter-footer">
+              <h3>Newsletter</h3>
+              <p>Inscrivez-vous pour recevoir nos actualités et conseils financiers.</p>
+              <form class="newsletter-form">
+                  <input type="email" placeholder="Votre email" required>
+                  <button type="submit">S'inscrire</button>
+              </form>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          &copy; 2025 BANI-BANI. Tous droits réservés.
+      </div>
+  </footer>
+
+  <!-- ======== SCRIPTS ======== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Google Maps -->
+  <script>
+    function initMap() {
+      const siege = { lat: 6.130, lng: 1.222 };
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 15,
+        center: siege,
+      });
+      const marker = new google.maps.Marker({
+        position: siege,
+        map: map,
+      });
+    }
+  </script>
+<script async src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script>
+</body>
+</html>

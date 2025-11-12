@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Microfinance - solutions financières adaptées, crédits, épargne, services innovants.">
+  <title>Microfinance - Votre partenaire de confiance</title>
+  
+  <!-- Bootstrap & Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="style3.css" rel="stylesheet">
+  <link rel="stylesheet" href="img.css">
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <!-- Gauche : Date du jour -->
+    <div class="topbar-left" id="current-date"></div>
+
+    <!-- Centre : Bande d'annonce -->
+    <div class="topbar-center text-center">
+      <div class="annonce-container">
+        <div class="annonce-track">
+          <a href="actualites.html#recrutement" class="annonce">Annonce rapide : Bani Bani recrute un stagiaire !</a>
+          <a href="actualites.html#offre" class="annonce">Nouveau service : ouverture de compte en ligne simplifiée.</a>
+          <a href="actualites.html#evenement" class="annonce">Participez à notre forum économique ce vendredi.</a>
+          <a href="actualites.html#promotion" class="annonce">Promotion spéciale : crédits à taux réduit jusqu’à fin du mois.</a>
+          <a href="actualites.html#innovation" class="annonce">Découvrez notre nouvelle application mobile Bani Bani Pro.</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Droite : Bouton "Portez plainte" -->
+    <div class="topbar-right">
+      <a href="plainte.html" class="btn-plainte">
+        <i class="bi bi-exclamation-triangle-fill me-1"></i> Portez plainte
+      </a>
+    </div>
+  </div>
+</div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index2.html">
+      <img src="./images/WhatsApp Image 2025-10-12 at 10.35.02.jpeg" alt="Logo" width="500" height="500" class="me-2">
+      BANI-BANI
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="index2.html">Accueil</a></li>
+
+        <!-- À PROPOS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="About.html" id="aproposDropdown" role="button" data-bs-toggle="dropdown">
+            À propos
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+            <li><a class="dropdown-item" href="About.html">Présentation</a></li>
+            <li><a class="dropdown-item" href="About.html#presentation">Organes statutaires</a></li>
+            <li><a class="dropdown-item" href="About.html#direction">Direction Générale</a></li>
+            <li><a class="dropdown-item" href="About.html#equipe">Équipe</a></li>
+            <li><a class="dropdown-item" href="About.html">Vision</a></li>
+            <li><a class="dropdown-item" href="About.html#faq">Questions fréquentes</a></li>
+            <li><a class="dropdown-item" href="About.html#partenaire">Partenaires</a></li>
+            <li><a class="dropdown-item" href="Album.html">Galerie</a></li>
+          </ul>
+        </li>
+
+        <!-- AGENCES -->
+        <li class="nav-item"><a class="nav-link text-white" href="NosAgence.html">Nos Agences</a></li>
+        </li>
+
+        <!-- ACTUALITÉS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="actualitesDropdown" role="button" data-bs-toggle="dropdown">
+            Actualités
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+            <li><a class="dropdown-item" href="News.html#actualites">Actualités</a></li>
+            <li><a class="dropdown-item" href="News.html#actualites">Appels d'offres</a></li>
+            <li><a class="dropdown-item" href="News.html#stage">Emplois / Stages</a></li>
+            <li><a class="dropdown-item" href="News.html#evenement">Événements</a></li>
+            <li><a class="dropdown-item" href="News.html#evenement">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f5f6fa;
+      color: #0B1F44;
+      overflow-x: hidden;
+    }
+
+    /* ===== HERO ===== */
+    .hero-section {
+      position: relative;
+      height: 50vh;
+      background: url('./images/F2.jpg') center/cover no-repeat;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+    .hero-section::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.55);
+    }
+    .hero-section .container {
+      position: relative;
+      z-index: 2;
+    }
+
+    /* ===== FILTRES ===== */
+    .nav-pills .nav-link.active {
+      background-color: #0B1F44 !important;
+      color: #fff !important;
+    }
+    .nav-pills .nav-link {
+      color: #0B1F44;
+      border: 1px solid #0B1F44;
+      border-radius: 25px;
+      margin: 0 6px;
+      padding: 8px 20px;
+      font-weight: 500;
+    }
+    .nav-pills .nav-link:hover {
+      background-color: #0B1F44;
+      color: white;
+    }
+
+    /* ===== GALERIE ===== */
+    .gallery-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery-card:hover {
+      transform: scale(1.04);
+    }
+    .gallery-card img,
+    .gallery-card video {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+    }
+
+    /* overlay ne bloque plus le clic */
+    .gallery-card .overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+    }
+    .gallery-card:hover .overlay { opacity: 1; }
+    .gallery-card .overlay i {
+      color: white;
+      font-size: 2rem;
+      pointer-events: auto;
+    }
+
+    /* ===== LIGHTBOX ===== */
+    .lightbox {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      z-index: 9999;
+      opacity: 0;
+      transition: opacity 0.4s ease;
+    }
+    .lightbox.active {
+      display: flex;
+      opacity: 1;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 12px;
+      box-shadow: 0 0 30px rgba(255,255,255,0.2);
+    }
+    .lightbox .caption {
+      color: white;
+      margin-top: 15px;
+      font-size: 1rem;
+      text-align: center;
+    }
+    .lightbox .close-btn,
+    .lightbox .prev-btn,
+    .lightbox .next-btn {
+      position: absolute;
+      color: white;
+      font-size: 2rem;
+      cursor: pointer;
+      transition: 0.3s;
+      user-select: none;
+    }
+    .lightbox .close-btn { top: 20px; right: 30px; }
+    .lightbox .prev-btn { left: 40px; }
+    .lightbox .next-btn { right: 40px; }
+    .lightbox .prev-btn:hover,
+    .lightbox .next-btn:hover,
+    .lightbox .close-btn:hover {
+      color: #0B9FE1;
+      transform: scale(1.2);
+    }
+
+    @media (max-width: 768px) {
+      .gallery-card img, .gallery-card video { height: 180px; }
+      .lightbox img { width: 95%; max-height: 70vh; }
+      .lightbox .prev-btn { left: 15px; }
+      .lightbox .next-btn { right: 15px; }
+    }
+  </style>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="fw-bold display-4">Galerie BANI-BANI</h1>
+      <p class="lead">Découvrez nos moments forts en images et vidéos</p>
+    </div>
+  </section>
+
+  <!-- FILTRES -->
+  <div class="container py-5">
+    <ul class="nav nav-pills justify-content-center mb-4" id="galleryFilter">
+      <li class="nav-item"><a class="nav-link active" href="#" data-filter="all">Tout</a></li>
+      <li class="nav-item"><a class="nav-link" href="#" data-filter="image">Images</a></li>
+      <li class="nav-item"><a class="nav-link" href="#" data-filter="video">Vidéos</a></li>
+    </ul>
+
+    <!-- GALERIE -->
+    <div class="row g-4" id="galleryContainer">
+      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Conférence nationale">
+        <div class="gallery-card">
+          <img src="./images/even1.jpg" alt="Conférence nationale">
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Forum régional">
+        <div class="gallery-card">
+          <img src="./images/even2.jpg" alt="Forum régional">
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Journée de la microfinance">
+        <div class="gallery-card">
+          <img src="./images/even3.jpg" alt="Journée de la microfinance">
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Journée de la microfinance">
+        <div class="gallery-card">
+          <img src="./images/even3.jpg" alt="Journée de la microfinance">
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+      </div>
+
+           <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
+        <div class="gallery-card">
+       <iframe src="./videos/vid2.mp4" title="Vidéo Assemblée Générale" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
+        <div class="gallery-card">
+            <iframe src="./videos/vid1.mp4" title="Vidéo Assemblée Générale" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
+        <div class="gallery-card">
+           <iframe src="./videos/vid3.mp4" title="Vidéo Assemblée Générale" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
+        <div class="gallery-card">
+           <iframe src="./videos/vid4.mp4" title="Vidéo Assemblée Générale" allowfullscreen></iframe>
+        </div>
+      </div>
+    
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Journée de la microfinance">
+        <div class="gallery-card">
+          <img src="./images/even3.jpg" alt="Journée de la microfinance">
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+      </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
+        <div class="gallery-card">
+          <video src="./videos/video1.mp4" controls></video>
+        </div>
+      </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Journée de la microfinance">
+        <div class="gallery-card">
+          <img src="./images/even3.jpg" alt="Journée de la microfinance">
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+      </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
+        <div class="gallery-card">
+          <video src="./videos/video1.mp4" controls></video>
+        </div>
+      </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Journée de la microfinance">
+        <div class="gallery-card">
+          <img src="./images/even3.jpg" alt="Journée de la microfinance">
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+      </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
+        <div class="gallery-card">
+          <video src="./videos/video1.mp4" controls></video>
+        </div>
+      </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Journée de la microfinance">
+        <div class="gallery-card">
+          <img src="./images/even3.jpg" alt="Journée de la microfinance">
+          <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+      </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video" data-caption="Présentation institutionnelle">
+        <div class="gallery-card">
+          <video src="./videos/video1.mp4" controls></video>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <span class="close-btn">&times;</span>
+    <span class="prev-btn"><i class="fa-solid fa-chevron-left"></i></span>
+    <span class="next-btn"><i class="fa-solid fa-chevron-right"></i></span>
+    <img id="lightbox-img" src="" alt="">
+    <div class="caption" id="lightbox-caption"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- ======== FOOTER ======== -->
+<footer class="footer-section">
+    <div class="container footer-content">
+        <!-- SECTION 1: À propos -->
+        <div class="footer-col about-footer">
+            <h3>BANI-BANI</h3>
+            <p>Votre partenaire de confiance pour l’épargne, le crédit et le développement de projets financiers. Nous accompagnons particuliers et entrepreneurs dans la réalisation de leurs projets.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- SECTION 2: Liens rapides -->
+        <div class="footer-col quick-links">
+            <h3>Liens rapides</h3>
+            <ul class="footer-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- SECTION 3: Nos services -->
+        <div class="footer-col services-footer">
+            <h3>Nos services</h3>
+            <ul class="footer-links">
+                <li><a href="#">Épargne</a></li>
+                <li><a href="#">Crédit</a></li>
+                <li><a href="#">Tontine Jeunes</a></li>
+                <li><a href="#">Projets immobiliers</a></li>
+            </ul>
+        </div>
+
+        <!-- SECTION 4: Newsletter -->
+        <div class="footer-col newsletter-footer">
+            <h3>Newsletter</h3>
+            <p>Inscrivez-vous pour recevoir nos actualités et conseils financiers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2025 BANI-BANI. Tous droits réservés.
+    </div>
+</footer>
+
+
+ 
+
+  <!-- ======== SCRIPTS ======== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Animation fade-in au scroll
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    });
+    elements.forEach(el => observer.observe(el));
+
+    // Animation compteur
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      counter.innerText = '0';
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / 200;
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCounter, 10);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+  </script>
+ <script>
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Script pour afficher automatiquement la date -->
+<script>
+  const dateEl = document.getElementById("current-date");
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const today = new Date().toLocaleDateString('fr-FR', options);
+  dateEl.textContent = today.charAt(0).toUpperCase() + today.slice(1);
+</script>
+<script src="img.js"></script>
+</body>
+</html>

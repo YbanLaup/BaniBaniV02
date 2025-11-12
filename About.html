@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Microfinance - solutions financières adaptées, crédits, épargne, services innovants.">
+  <title>Microfinance - Votre partenaire de confiance</title>
+  
+  <!-- Bootstrap & Font Awesome -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Custom CSS -->
+  <link href="style3.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- ======== NAVBAR ======== -->
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="container d-flex justify-content-between align-items-center flex-wrap">
+    <!-- Gauche : Date du jour -->
+    <div class="topbar-left" id="current-date"></div>
+
+    <!-- Centre : Bande d'annonce -->
+    <div class="topbar-center text-center">
+      <div class="annonce-container">
+        <div class="annonce-track">
+          <a href="actualites.html#recrutement" class="annonce">Annonce rapide : Bani Bani recrute un stagiaire !</a>
+          <a href="actualites.html#offre" class="annonce">Nouveau service : ouverture de compte en ligne simplifiée.</a>
+          <a href="actualites.html#evenement" class="annonce">Participez à notre forum économique ce vendredi.</a>
+          <a href="actualites.html#promotion" class="annonce">Promotion spéciale : crédits à taux réduit jusqu’à fin du mois.</a>
+          <a href="actualites.html#innovation" class="annonce">Découvrez notre nouvelle application mobile Bani Bani Pro.</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Droite : Bouton "Portez plainte" -->
+    <div class="topbar-right">
+      <a href="plainte.html" class="btn-plainte">
+        <i class="bi bi-exclamation-triangle-fill me-1"></i> Portez plainte
+      </a>
+    </div>
+  </div>
+</div>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="index2.html">
+      <img src="./images/WhatsApp Image 2025-10-12 at 10.35.02.jpeg" alt="Logo" width="500" height="500" class="me-2">
+      BANI-BANI
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link text-white" href="index2.html">Accueil</a></li>
+
+        <!-- À PROPOS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="About.html" id="aproposDropdown" role="button" data-bs-toggle="dropdown">
+            À propos
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+            <li><a class="dropdown-item" href="About.html">Présentation</a></li>
+            <li><a class="dropdown-item" href="About.html#presentation">Organes statutaires</a></li>
+            <li><a class="dropdown-item" href="About.html#direction">Direction Générale</a></li>
+            <li><a class="dropdown-item" href="About.html#equipe">Équipe</a></li>
+            <li><a class="dropdown-item" href="About.html">Vision</a></li>
+            <li><a class="dropdown-item" href="About.html#faq">Questions fréquentes</a></li>
+            <li><a class="dropdown-item" href="About.html#partenaire">Partenaires</a></li>
+            <li><a class="dropdown-item" href="Album.html">Galerie</a></li>
+          </ul>
+        </li>
+
+        <!-- AGENCES -->
+        <li class="nav-item"><a class="nav-link text-white" href="NosAgence.html">Nos Agences</a></li>
+        </li>
+
+        <!-- ACTUALITÉS -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-white" href="#" id="actualitesDropdown" role="button" data-bs-toggle="dropdown">
+            Actualités
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+            <li><a class="dropdown-item" href="News.html#actualites">Actualités</a></li>
+            <li><a class="dropdown-item" href="News.html#actualites">Appels d'offres</a></li>
+            <li><a class="dropdown-item" href="News.html#stage">Emplois / Stages</a></li>
+            <li><a class="dropdown-item" href="News.html#evenement">Événements</a></li>
+            <li><a class="dropdown-item" href="News.html#evenement">FAQ</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-white" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- HERO -->
+  <section class="hero-section d-flex align-items-center justify-content-center text-center" style="background: url('./images/ESA-3.jpg') center/cover no-repeat;">
+    <div class="overlay"></div>
+    <div class="container text-white">
+      <h1 class="fw-bold display-4 fade-in">A propos de Bani-Bani</h1>
+      <p class="lead fade-in">Bani Bani votre reference en matiere d'Accompagnement</p>
+    </div>
+  </section>
+
+
+<!-- SECTION PRESENTATION -->
+  <section id="presentation" class="about fade-in">
+    <div class="container">
+       <h3 style="text-align: center; margin-bottom: 55px;">Presentation</h3>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <img src="images/ESA-3.jpg" alt="À propos" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h2>À propos de nous</h2>
+          <p>Notre mission est de rendre les services financiers accessibles, transparents et équitables pour tous. Avec plus de 10 ans d’expérience, nous accompagnons les particuliers et entrepreneurs dans la réalisation de leurs projets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- SECTION ORGANES STATUTAIRES -->
+<section class="organes py-5 bg-light" id="organes">
+  <div class="container">
+    <h2 class="text-center mb-4">Organes Statutaires</h2>
+    <div class="row g-4">
+
+      <!-- ASSEMBLÉE GÉNÉRALE -->
+      <div class="col-md-4">
+        <div class="card shadow border-0 h-100 text-center d-flex flex-column">
+          <div class="card-body flex-grow-1">
+            <i class="fa-solid fa-users fa-3x mb-3" style="color: #0B1F44;"></i>
+            <h5 class="card-title fw-bold">Assemblée Générale</h5>
+            <p class="card-text">
+              Organe suprême de décision regroupant tous les membres de l’association.
+            </p>
+          </div>
+          <div class="ratio ratio-16x9">
+            <iframe 
+              src="./vid2.mp4"
+              title="Vidéo Assemblée Générale"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONSEIL D’ADMINISTRATION -->
+      <div class="col-md-4">
+        <div class="card shadow border-0 h-100 text-center d-flex flex-column">
+          <div class="card-body flex-grow-1">
+            <i class="fa-solid fa-briefcase fa-3x mb-3" style="color: #0B1F44;"></i>
+            <h5 class="card-title fw-bold">Conseil d’Administration</h5>
+            <p class="card-text">
+              Il définit les grandes orientations stratégiques et veille à la bonne gouvernance.
+            </p>
+          </div>
+          <div class="ratio ratio-16x9">
+            <iframe 
+              src="./vid1.mp4"
+              title="Vidéo Conseil d’Administration"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- DIRECTION EXÉCUTIVE -->
+      <div class="col-md-4">
+        <div class="card shadow border-0 h-100 text-center d-flex flex-column">
+          <div class="card-body flex-grow-1">
+            <i class="fa-solid fa-building-user fa-3x mb-3" ></i>
+            <h5 class="card-title fw-bold">Direction Exécutive</h5>
+            <p class="card-text">
+              Elle est chargée de la mise en œuvre des décisions et de la gestion opérationnelle.
+            </p>
+          </div>
+          <div class="ratio ratio-16x9">
+            <iframe 
+               src="./vid1.mp4"
+              title="Vidéo Direction Exécutive"
+              allowfullscreen>
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ======== ÉQUIPE ======== -->
+<section class="equipe py-5" id="equipe">
+  <div class="container">
+    <h2 class="text-center mb-4">Notre Équipe</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card border-0 shadow text-center">
+          <img src="/images/Capture.PNG" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="">
+          <div class="card-body">
+            <h6 class="fw-bold">Nom Prénom</h6>
+            <p class="text-muted mb-0">Directeur Général</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 shadow text-center">
+          <img src="/images/Capture.PNG" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="">
+          <div class="card-body">
+            <h6 class="fw-bold">Nom Prénom</h6>
+            <p class="text-muted mb-0">Chef d’Agence</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 shadow text-center">
+          <img src="/images/Capture.PNG" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="">
+          <div class="card-body">
+            <h6 class="fw-bold">Nom Prénom</h6>
+            <p class="text-muted mb-0">Responsable Crédit</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 shadow text-center">
+          <img src="./images/Capture.PNG" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="">
+          <div class="card-body">
+            <h6 class="fw-bold">Nom Prénom</h6>
+            <p class="text-muted mb-0">Agent Collecteur</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION DIRECTION GENERALE -->
+<section class="direction-generale py-5" id="direction">
+  <div class="container">
+    <h2 class="text-center mb-4">Direction Générale</h2>
+    <p class="text-center lead mb-5">
+      La Direction Générale de BANI-BANI incarne la vision stratégique et opérationnelle de l’institution.
+      Elle est composée d’une équipe dynamique qui coordonne les différentes actions pour atteindre nos objectifs sociaux et économiques.
+    </p>
+
+    <div class="row g-4">
+      <!-- DG -->
+      <div class="col-md-4">
+        <div class="card shadow-lg border-0 h-100 text-center direction-card">
+          <img src="/images/Capture.PNG" class="card-img-top" alt="Directeur Général" style="width:120px; height:120px; object-fit:cover;" alt="">
+          <div class="card-body">
+            <h5 class="fw-bold">M. Kossi A. D.</h5>
+            <p class="text-muted">Directeur Général</p>
+            <p class="card-text small">
+              Responsable de la stratégie globale et garant de la vision de l’organisation.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- DGA -->
+      <div class="col-md-4">
+        <div class="card shadow-lg border-0 h-100 text-center direction-card">
+          <img src="/images/Capture.PNG" class="card-img-top" alt="Directeur Général Adjoint"style="width:120px; height:120px; object-fit:cover;" alt="">
+          <div class="card-body">
+            <h5 class="fw-bold">Mme Akoua B.</h5>
+            <p class="text-muted">Directrice Générale Adjointe</p>
+            <p class="card-text small">
+              Supervise les opérations et assure la bonne coordination des agences.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Secrétaire Général -->
+      <div class="col-md-4">
+        <div class="card shadow-lg border-0 h-100 text-center direction-card">
+          <img src="/images/Capture.PNG" class="card-img-top" alt="Secrétaire Général" style="width:120px; height:120px; object-fit:cover;" alt="">
+          <div class="card-body">
+            <h5 class="fw-bold">M. Kodjo L.</h5>
+            <p class="text-muted">Secrétaire Général</p>
+            <p class="card-text small">
+              Assure la coordination administrative et la liaison entre les organes de gouvernance.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Vidéo de présentation -->
+    <div class="text-center mt-5">
+      <div class="ratio ratio-16x9 mx-auto" style="max-width:800px;">
+        <iframe src="./vid1.mp4" 
+                title="Présentation de la Direction Générale"
+                allowfullscreen></iframe>
+      </div>
+      <p class="mt-3 text-muted small">Regardez la présentation de la Direction Générale de BANI-BANI.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- VISION / MISSION / VALEURS -->
+<section class="container py-5 fade-in" id="vision">
+  <div class="row g-4 text-center">
+    <div class="col-md-4">
+      <div class="service-card p-4">
+        <div class="service-icon mb-3"><i class="fa-solid fa-eye"></i></div>
+        <h4>Notre Vision</h4>
+        <p>Promouvoir l’épanouissement économique à travers une inclusion financière durable.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-card p-4">
+        <div class="service-icon mb-3"><i class="fa-solid fa-bullseye"></i></div>
+        <h4>Notre Mission</h4>
+        <p>Accompagner les membres dans leurs projets grâce à des services financiers accessibles et sûrs.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="service-card p-4">
+        <div class="service-icon mb-3"><i class="fa-solid fa-heart"></i></div>
+        <h4>Nos Valeurs</h4>
+        <p>Solidarité, confiance, transparence et proximité avec nos membres.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!--Partenaires-->
+
+<section class="partenaires text-center fade-in" id="partenaire">
+  <div class="container">
+    <h2 class="mb-5">Nos Partenaires</h2>
+
+    <div class="slider-container">
+      <div class="slide-track">
+        <!-- Logos originaux -->
+       <img src="./images/R2.png" alt="">
+       <img src="./images/R1.jfif" alt="">
+       <img src="./images/R4.jpg" alt="">
+       <img src="./images/R6.jpeg" alt="">
+  
+       <img src="./images/R2.png" alt="">
+       <img src="./images/R1.jfif" alt="">
+       <img src="./images/R4.jpg" alt="">
+       <img src="./images/R6.jpeg" alt="">
+  
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- ======== FAQ ======== -->
+  <section class="faq fade-in" id="faq">
+    <div class="container">
+      <h2 class="text-center mb-5">FAQ - Questions fréquentes</h2>
+      <div class="accordion" id="faqAccordion">
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#q1">
+              Comment ouvrir un compte tontine ?
+            </button>
+          </h2>
+          <div id="q1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Vous pouvez ouvrir un compte en vous rendant dans nos agences ou en prenant compte avec une Agent de notre service.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q2">
+              Quels sont les taux d’intérêt ?
+            </button>
+          </h2>
+          <div id="q2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Nous ne recevons aucuns taux d'interet sur nos credit. soit 0% de taux d'interret
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#q3">
+              Comment contacter l’équipe ?
+            </button>
+          </h2>
+          <div id="q3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body">
+              Vous pouvez nous joindre via téléphone, email ou WhatsApp 7j/7.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+ <!-- ======== FOOTER ======== -->
+<footer class="footer-section">
+    <div class="container footer-content">
+        <!-- SECTION 1: À propos -->
+        <div class="footer-col about-footer">
+            <h3>BANI-BANI</h3>
+            <p>Votre partenaire de confiance pour l’épargne, le crédit et le développement de projets financiers. Nous accompagnons particuliers et entrepreneurs dans la réalisation de leurs projets.</p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <!-- SECTION 2: Liens rapides -->
+        <div class="footer-col quick-links">
+            <h3>Liens rapides</h3>
+            <ul class="footer-links">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#galerie">Galerie</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- SECTION 3: Nos services -->
+        <div class="footer-col services-footer">
+            <h3>Nos services</h3>
+            <ul class="footer-links">
+                <li><a href="#">Épargne</a></li>
+                <li><a href="#">Crédit</a></li>
+                <li><a href="#">Tontine Jeunes</a></li>
+                <li><a href="#">Projets immobiliers</a></li>
+            </ul>
+        </div>
+
+        <!-- SECTION 4: Newsletter -->
+        <div class="footer-col newsletter-footer">
+            <h3>Newsletter</h3>
+            <p>Inscrivez-vous pour recevoir nos actualités et conseils financiers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Votre email" required>
+                <button type="submit">S'inscrire</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        &copy; 2025 BANI-BANI. Tous droits réservés.
+    </div>
+</footer>
+
+
+ 
+
+  <!-- ======== SCRIPTS ======== -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Animation fade-in au scroll
+    const elements = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    });
+    elements.forEach(el => observer.observe(el));
+
+    // Animation compteur
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+      counter.innerText = '0';
+      const updateCounter = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = target / 200;
+        if (count < target) {
+          counter.innerText = Math.ceil(count + increment);
+          setTimeout(updateCounter, 10);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCounter();
+    });
+  </script>
+ <script>
+window.addEventListener('scroll', () => {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Script pour afficher automatiquement la date -->
+<script>
+  const dateEl = document.getElementById("current-date");
+  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+  const today = new Date().toLocaleDateString('fr-FR', options);
+  dateEl.textContent = today.charAt(0).toUpperCase() + today.slice(1);
+</script>
+
+
+</body>
+</html>
