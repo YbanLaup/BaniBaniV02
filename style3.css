@@ -986,7 +986,7 @@ body {
   padding: 14px 16px;
   border-radius: 50%;
   cursor: pointer;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   transition: all 0.3s ease;
 }
 
@@ -1057,7 +1057,7 @@ body {
   }
 
   .temoignages-left h2 {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   .temoignages-left p {
