@@ -280,6 +280,7 @@ body {
   gap: 25px;
 }
 
+/* ====== CARTE ====== */
 .gallery-item {
   flex: 1 1 calc(25% - 25px);
   max-width: calc(25% - 25px);
@@ -295,7 +296,7 @@ body {
   box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* ====== CONTENU DES CARTES ====== */
+/* ====== CONTENU ====== */
 .gallery-card {
   position: relative;
   overflow: hidden;
@@ -388,7 +389,6 @@ body {
   flex-direction: column;
 }
 
-/* ✅ Empêche les images de "sauter" sur mobile */
 .lightbox img,
 .lightbox iframe {
   width: auto;
@@ -402,7 +402,6 @@ body {
   transition: transform 0.3s ease;
 }
 
-/* Légende */
 .lightbox .caption {
   color: #fff;
   margin-top: 15px;
@@ -410,7 +409,6 @@ body {
   text-align: center;
 }
 
-/* Boutons navigation */
 .lightbox .close-btn,
 .lightbox .prev-btn,
 .lightbox .next-btn {
@@ -438,15 +436,7 @@ body {
    📱 RESPONSIVE DESIGN
 ================================ */
 
-/* Écrans larges */
-@media (max-width: 1200px) {
-  .gallery-item {
-    flex: 1 1 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
-  }
-}
-
-/* Tablettes */
+/* Écrans moyens (tablettes et grands mobiles) → 2 par ligne */
 @media (max-width: 992px) {
   .gallery-item {
     flex: 1 1 calc(50% - 20px);
@@ -459,11 +449,11 @@ body {
   }
 }
 
-/* Mobiles */
+/* Petits mobiles → 2 par ligne aussi (plus compact) */
 @media (max-width: 600px) {
   .gallery-item {
-    flex: 1 1 100%;
-    max-width: 100%;
+    flex: 1 1 calc(50% - 15px);
+    max-width: calc(50% - 15px);
   }
 
   .gallery-card img,
@@ -528,7 +518,15 @@ body {
 .about p {
   font-size: clamp(1rem, 0.8vw + 0.9rem, 1.1rem);
   line-height: 1.7;
-  text-align: center;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+  color: #334;
+}
+.about span {
+  font-size: clamp(1rem, 0.8vw + 0.9rem, 1.1rem);
+  line-height: 1.7;
+  text-align:center;
   max-width: 800px;
   margin: 0 auto;
   color: #334;
@@ -735,6 +733,9 @@ body {
 /* ===== RESPONSIVE ===== */
 
 /* Tablettes */
+/* ===== RESPONSIVE ===== */
+
+/* Tablettes */
 @media (max-width: 992px) {
   .counter {
     font-size: 2.2rem;
@@ -743,34 +744,45 @@ body {
   .counter-icon {
     font-size: 2.3rem;
   }
+
+  /* ✅ Passe en grille 2x2 sur les tablettes */
+  .counters-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-items: center;
+  }
+
+  /* Supprime les traits verticaux entre les colonnes */
+  .counter-item::after {
+    display: none;
+  }
 }
 
 /* Mobiles */
 @media (max-width: 600px) {
+  /* ✅ Toujours 2 par ligne sur mobile */
   .counters-wrapper {
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
   }
 
   .counter-item {
     padding: 25px 15px;
   }
 
-  /* Traits verticaux deviennent horizontaux */
-  .counter-item:not(:last-child)::after {
-    width: 60%;
-    height: 1px;
-    left: 20%;
-    top: auto;
-    bottom: 0;
-  }
-
-  .counter {
+  .counter-icon {
     font-size: 2rem;
   }
 
+  .counter {
+    font-size: 1.8rem;
+  }
+
   .counter-item p {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -1399,8 +1411,11 @@ body {
 /* ===========================
    CONTACT
 =========================== */
+/* ===========================
+   ✉️ SECTION CONTACT AMÉLIORÉE
+=========================== */
 .contact-section {
-  background: #f5f8fc;
+  background: linear-gradient(180deg, #f9fbfd 0%, #f5f8fc 100%);
   padding: 80px 0;
   text-align: center;
 }
@@ -1418,6 +1433,7 @@ body {
   margin-bottom: 50px;
 }
 
+/* Cartes de contact */
 .contact-methods {
   display: flex;
   flex-wrap: wrap;
@@ -1428,21 +1444,36 @@ body {
 .contact-card {
   background: #ffffff;
   padding: 25px 20px;
-  border-radius: 12px;
+  border-radius: 14px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
   width: 280px;
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
 
 .contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-6px);
+  box-shadow: 0 14px 25px rgba(0, 0, 0, 0.15);
 }
 
+/* Icônes principales des cartes */
 .contact-card .contact-icon {
-  font-size: 2rem;
-  color: #0B1F44;
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  color: #fff;
+  background: linear-gradient(135deg, #00AEEF, #0076C8);
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 15px;
+  box-shadow: 0 6px 12px rgba(0, 174, 239, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover .contact-icon {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 174, 239, 0.35);
 }
 
 .contact-card h3 {
@@ -1466,6 +1497,82 @@ body {
 
 .contact-card .contact-link:hover {
   color: #0B1F44;
+}
+
+/* ===========================
+   🌐 RÉSEAUX SOCIAUX
+=========================== */
+.social-section {
+  margin-top: 60px;
+}
+
+.social-section h3 {
+  color: #0B1F44;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Icônes sociales */
+.social-links a {
+  font-size: 1.6rem;
+  color: #fff;
+  background: #00AEEF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
+  box-shadow: 0 6px 14px rgba(0, 174, 239, 0.3);
+  position: relative;
+}
+
+/* Effets individuels par réseau */
+.social-links a:nth-child(1) { background: #1877F2; } /* Facebook */
+.social-links a:nth-child(2) { background: #E4405F; } /* Instagram */
+.social-links a:nth-child(3) { background: #1DA1F2; } /* Twitter */
+.social-links a:nth-child(4) { background: #25D366; } /* WhatsApp */
+
+.social-links a:hover {
+  transform: translateY(-6px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation légère au survol */
+.social-links a i {
+  transition: transform 0.3s ease;
+}
+
+.social-links a:hover i {
+  transform: rotate(10deg) scale(1.2);
+}
+
+/* ===========================
+   📱 RESPONSIVE
+=========================== */
+@media (max-width: 768px) {
+  .contact-methods {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-card {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .social-links a {
+    width: 45px;
+    height: 45px;
+    font-size: 1.4rem;
+  }
 }
 
 /* ===========================
@@ -1698,7 +1805,57 @@ body {
   font-size: 0.9rem;
   color: #bbb;
 }
+.sociale-section {
+  margin-top: 60px;
+}
 
+.sociale-section h3 {
+  color: #0B1F44;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.sociale-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Icônes sociales */
+.sociale-links a {
+  font-size: 1.6rem;
+  color: #fff;
+  background: #00AEEF;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.35s ease;
+ 
+  position: relative;
+}
+
+/* Effets individuels par réseau */
+.sociale-links a:nth-child(1) { background: #1877F2; } /* Facebook */
+.sociale-links a:nth-child(2) { background: #E4405F; } /* Instagram */
+.sociale-links a:nth-child(3) { background: #1DA1F2; } /* Twitter */
+.sociale-links a:nth-child(4) { background: #25D366; } /* WhatsApp */
+
+.sociale-links a:hover {
+  transform: translateY(-6px) scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation légère au survol */
+.sociale-links a i {
+  transition: transform 0.3s ease;
+}
+
+.sociale-links a:hover i {
+  transform: rotate(10deg) scale(1.2);
+}
 /* ===========================
    ANIMATIONS
 =========================== */
@@ -1862,8 +2019,8 @@ body {
 
   .footer-content {
     flex-direction: column;
-    align-items: center;       /* ✅ Centrage horizontal */
-    text-align: center;        /* ✅ Centrage du texte */
+    align-items: justify;       /* ✅ Centrage horizontal */
+    text-align: justify;        /* ✅ Centrage du texte */
   }
 }
 
@@ -1880,7 +2037,7 @@ body {
   .carousel-caption h1 { font-size: 1.8rem; }
   .carousel-caption p { font-size: 0.95rem; }
 
-  .about-footer .social-links a {
+  .about-footer .sociale-links a {
     font-size: 1rem;
     margin-right: 10px;
   }
