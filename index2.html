@@ -12,7 +12,7 @@
   
   <!-- Custom CSS -->
   <link href="style3.css" rel="stylesheet">
-  <link rel="stylesheet" href="img.css">
+
 </head>
 <body>
 
@@ -416,15 +416,17 @@
           <a href="Album.html" class="btn btn-see-more">Voir plus</a>
         </div>
       </div>
-    
-      <!-- LIGHTBOX -->
-      <div class="lightbox" id="lightbox">
-        <span class="close-btn">&times;</span>
-        <span class="prev-btn"><i class="fa-solid fa-chevron-left"></i></span>
-        <span class="next-btn"><i class="fa-solid fa-chevron-right"></i></span>
-        <img id="lightbox-img" src="" alt="">
-        <div class="caption" id="lightbox-caption"></div>
-      </div>
+  <div class="lightbox" id="lightbox">
+  <span class="close-btn">&times;</span>
+  <span class="prev-btn"><i class="fa-solid fa-chevron-left"></i></span>
+  <span class="next-btn"><i class="fa-solid fa-chevron-right"></i></span>
+
+  <div class="lightbox-content">
+    <img id="lightbox-img" src="" alt="">
+    <div class="caption" id="lightbox-caption"></div>
+  </div>
+</div>
+
     </section>
   
   <!--Partenaires-->
@@ -786,6 +788,18 @@ setInterval(() => {
   current = (current + 1) % slides.length;
   showSlides(current);
 }, 10000);
+
+</script>
+<script>
+  const lightbox = document.getElementById('lightbox');
+
+lightbox.addEventListener('transitionend', () => {
+  if (lightbox.classList.contains('active')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+});
 
 </script>
 </body>
