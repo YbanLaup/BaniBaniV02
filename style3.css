@@ -246,70 +246,78 @@ body {
 
 /*GAlerie*/
 
-/* ===== GALERIE ===== */
+/* ================================
+   🎨 SECTION GALERIE
+================================ */
+/* ===========================
+   SECTION GALERIE
+=========================== */
+.galerie {
+  background: #f9fbfd;
+  padding: clamp(60px, 8vw, 100px) 20px;
+  text-align: center;
+}
+
 .galerie h2 {
   color: #0B1F44;
   font-weight: 800;
   text-transform: uppercase;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem);
+  margin-bottom: 10px;
 }
 
 .galerie .subtitle {
-  font-size: 1rem;
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
   color: #555;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
-/* Boutons de filtre */
-.filter-btn {
-  border: 1px solid #0B1F44;
-  background: transparent;
-  color: #0B1F44;
-  padding: 6px 16px;
-  margin: 0 5px;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-.filter-btn.active,
-.filter-btn:hover {
-  background: #0B1F44;
-  color: #fff;
-  transform: translateY(-2px);
+/* ====== GRILLE ====== */
+.gallery-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
 }
 
-/* Cards */
-.gallery-grid .gallery-item {
+.gallery-item {
+  flex: 1 1 calc(25% - 25px);
+  max-width: calc(25% - 25px);
   position: relative;
   overflow: hidden;
   border-radius: 15px;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.gallery-grid .gallery-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+
+.gallery-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
 }
 
+/* ====== CONTENU DES CARTES ====== */
 .gallery-card {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  transition: transform 0.3s ease;
 }
+
 .gallery-card img,
 .gallery-card iframe {
   width: 100%;
-  height: 220px;
+  height: 230px;
   object-fit: cover;
   border-radius: 12px;
   transition: transform 0.4s ease;
+  display: block;
 }
+
 .gallery-card:hover img,
 .gallery-card:hover iframe {
   transform: scale(1.05);
 }
 
-/* Overlay */
+/* ====== OVERLAY ====== */
 .gallery-card .overlay {
   position: absolute;
   inset: 0;
@@ -319,33 +327,39 @@ body {
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease;
-  pointer-events: none; /* overlay ne bloque plus le clic */
   border-radius: 12px;
+  pointer-events: none;
 }
+
 .gallery-card:hover .overlay {
   opacity: 1;
 }
+
 .gallery-card .overlay i {
   color: #fff;
   font-size: 2rem;
-  pointer-events: auto;
 }
 
-/* Bouton Voir plus */
+/* ====== BOUTON "VOIR PLUS" ====== */
 .btn-see-more {
+  display: inline-block;
   background: #0B1F44;
   color: #fff;
-  padding: 10px 30px;
-  border-radius: 25px;
+  padding: 12px 35px;
+  border-radius: 30px;
   font-weight: 600;
   transition: all 0.3s ease;
-}
-.btn-see-more:hover {
-  background: #00AEEF;
-  transform: translateY(-2px);
+  margin-top: 40px;
 }
 
-/* ===== LIGHTBOX ===== */
+.btn-see-more:hover {
+  background: #00AEEF;
+  transform: translateY(-3px);
+}
+
+/* ================================
+   LIGHTBOX CENTRÉE ET STABLE
+================================ */
 .lightbox {
   position: fixed;
   inset: 0;
@@ -353,27 +367,50 @@ body {
   display: none;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
   z-index: 9999;
   opacity: 0;
   transition: opacity 0.4s ease;
+  overflow: hidden;
 }
+
 .lightbox.active {
   display: flex;
   opacity: 1;
 }
-.lightbox img {
+
+.lightbox-content {
+  position: relative;
   max-width: 90%;
+  max-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ✅ Empêche les images de "sauter" sur mobile */
+.lightbox img,
+.lightbox iframe {
+  width: auto;
+  max-width: 100%;
   max-height: 80vh;
+  object-fit: contain;
   border-radius: 12px;
   box-shadow: 0 0 30px rgba(255,255,255,0.2);
+  display: block;
+  margin: auto;
+  transition: transform 0.3s ease;
 }
+
+/* Légende */
 .lightbox .caption {
-  color: white;
+  color: #fff;
   margin-top: 15px;
   font-size: 1rem;
   text-align: center;
 }
+
+/* Boutons navigation */
 .lightbox .close-btn,
 .lightbox .prev-btn,
 .lightbox .next-btn {
@@ -383,26 +420,77 @@ body {
   cursor: pointer;
   transition: 0.3s;
   user-select: none;
+  z-index: 10000;
 }
+
 .lightbox .close-btn { top: 20px; right: 30px; }
-.lightbox .prev-btn { left: 40px; }
-.lightbox .next-btn { right: 40px; }
+.lightbox .prev-btn { left: 40px; top: 50%; transform: translateY(-50%); }
+.lightbox .next-btn { right: 40px; top: 50%; transform: translateY(-50%); }
+
 .lightbox .prev-btn:hover,
 .lightbox .next-btn:hover,
 .lightbox .close-btn:hover {
-  color: #0B9FE1;
+  color: #00AEEF;
   transform: scale(1.2);
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 1200px) { .gallery-item { flex: 0 0 24%; } }
-@media (max-width: 992px)  { .gallery-item { flex: 0 0 48%; } }
-@media (max-width: 576px)  { .gallery-item { flex: 0 0 100%; } }
-@media (max-width: 768px) {
-  .gallery-card img, .gallery-card iframe { height: 180px; }
-  .lightbox img { width: 95%; max-height: 70vh; }
-  .lightbox .prev-btn { left: 15px; }
-  .lightbox .next-btn { right: 15px; }
+/* ================================
+   📱 RESPONSIVE DESIGN
+================================ */
+
+/* Écrans larges */
+@media (max-width: 1200px) {
+  .gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    max-width: calc(33.333% - 20px);
+  }
+}
+
+/* Tablettes */
+@media (max-width: 992px) {
+  .gallery-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+  }
+
+  .gallery-card img,
+  .gallery-card iframe {
+    height: 200px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  .gallery-item {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .gallery-card img,
+  .gallery-card iframe {
+    height: 180px;
+  }
+
+  .lightbox-content {
+    max-width: 95%;
+    max-height: 80vh;
+    padding: 0 10px;
+  }
+
+  .lightbox img,
+  .lightbox iframe {
+    max-width: 100%;
+    max-height: 70vh;
+  }
+
+  .lightbox .prev-btn { left: 20px; font-size: 1.6rem; }
+  .lightbox .next-btn { right: 20px; font-size: 1.6rem; }
+  .lightbox .close-btn { top: 15px; right: 20px; font-size: 1.8rem; }
+
+  .btn-see-more {
+    padding: 10px 25px;
+    font-size: 0.95rem;
+  }
 }
 
 
@@ -412,7 +500,8 @@ body {
 /* ===== ABOUT SECTION ===== */
 .about {
   background: linear-gradient(to bottom right, #f5f7fb, #eef1f6);
-  padding: 80px 0;
+  padding: 2px 0;
+;
 }
 
 /* ===== TITRE ===== */
@@ -508,7 +597,7 @@ body {
 /* Mobiles (jusqu’à 600px) */
 @media (max-width: 600px) {
   .about {
-    padding: 60px 0;
+    padding: 1px 0;
   }
 
   .about h2 {
@@ -1226,39 +1315,86 @@ body {
 =========================== */
 .map-section {
   background: #f0f5fb;
-  padding: 60px 0;
+  padding: clamp(40px, 5vw, 80px) 15px; /* padding responsive */
   border-top: 1px solid #d1e0f0;
   border-bottom: 1px solid #d1e0f0;
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 
+/* ===== TITRE ===== */
 .map-section h4 {
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 2.5vw, 2.5rem); /* titre fluide */
   font-weight: 700;
   color: #0B1F44;
-  margin-bottom: 30px;
+  margin-bottom: clamp(20px, 3vw, 30px);
+  line-height: 1.2;
+  text-transform: uppercase;
 }
 
+/* ===== CONTENEUR DE LA CARTE ===== */
 .map-section .ratio {
   max-width: 900px;
   margin: 0 auto;
   border-radius: 15px;
   overflow: hidden;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .map-section .ratio:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
+/* ===== IFRAME (MAP) ===== */
 .map-section iframe {
   border: 0;
   width: 100%;
-  height: 400px;
+  height: clamp(250px, 40vw, 450px); /* hauteur responsive */
   border-radius: 15px;
+  transition: transform 0.3s ease;
 }
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* TABLETTE (≤ 992px) */
+@media (max-width: 992px) {
+  .map-section {
+    padding: clamp(40px, 6vw, 60px) 20px;
+  }
+
+  .map-section h4 {
+    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    margin-bottom: 25px;
+  }
+
+  .map-section iframe {
+    height: clamp(250px, 35vw, 400px);
+  }
+}
+
+/* MOBILE (≤ 600px) */
+@media (max-width: 600px) {
+  .map-section {
+    padding: clamp(30px, 6vw, 50px) 15px;
+  }
+
+  .map-section h4 {
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
+    margin-bottom: 20px;
+  }
+
+  .map-section .ratio {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  .map-section iframe {
+    height: clamp(200px, 50vw, 350px);
+  }
+}
+
 
 /* ===========================
    CONTACT
