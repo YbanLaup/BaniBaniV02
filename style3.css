@@ -1627,21 +1627,26 @@ body {
 }
 
 /* ================= TOPBAR ================= */
+/* ===========================
+   TOPBAR
+=========================== */
 .topbar {
   background-color: white;
-  color:  #0B1F44;;
+  color: #0B1F44;
   font-size: 0.9rem;
-  padding: 6px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 6px 15px; /* padding horizontal pour éviter débordement */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 1100;
 }
 
+/* Layout flex */
 .topbar .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 10px; /* espace entre les sections */
 }
 
 .topbar-left,
@@ -1649,10 +1654,15 @@ body {
 .topbar-right {
   flex: 1;
   text-align: center;
+  min-width: 150px; /* éviter que les blocs deviennent trop étroits */
 }
 
 .topbar-left {
   text-align: left;
+}
+
+.topbar-center {
+  text-align: center;
 }
 
 .topbar-right {
@@ -1663,11 +1673,13 @@ body {
   color: #00AEEF;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .topbar {
-    text-align: center;
-    padding: 8px 0;
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 992px) {
+  .topbar .container {
+    flex-direction: column;
+    align-items: center;
   }
 
   .topbar-left,
@@ -1675,8 +1687,29 @@ body {
   .topbar-right {
     flex: 100%;
     text-align: center;
+    margin: 5px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .topbar {
+    font-size: 0.85rem;
+    padding: 5px 10px;
+  }
+
+  .topbar-left,
+  .topbar-center,
+  .topbar-right {
     margin: 3px 0;
   }
+}
+
+/* ===========================
+   ANIMATION CONTINUE
+=========================== */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
 
 
