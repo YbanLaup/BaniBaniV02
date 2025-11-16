@@ -182,6 +182,351 @@
     </div>
   </section>
   <!-- SECTION ORGANES STATUTAIRES -->
+   <style>
+    /* ================================
+   SECTION ORGANES STATUTAIRES
+================================= */
+
+.organes {
+  background: linear-gradient(135deg, #0b1f44 0%, #142b56 50%, #0b1f44 100%);
+  padding: 90px 0;
+  position: relative;
+  color: #fff;
+}
+
+.organes h2 {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+}
+
+.organes h2::after {
+  content: "";
+  width: 80px;
+  height: 3px;
+  display: block;
+  background: #00aef1;
+  margin: 12px auto 0;
+  border-radius: 5px;
+}
+
+/* ------- CARTES PREMIUM -------- */
+.organes .card {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+  border-radius: 18px;
+  padding: 25px 20px;
+  transition: 0.35s ease;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.organes .card:hover {
+  transform: translateY(-8px);
+  border-color: #00aef1;
+  box-shadow: 0 12px 28px rgba(0, 174, 241, 0.25);
+}
+
+/* ------- ICÔNES GLASS -------- */
+.organes i {
+  background: rgba(255, 255, 255, 0.15);
+  padding: 18px;
+  border-radius: 50%;
+  color: #00aef1 !important;
+  box-shadow: 0 4px 10px rgba(0, 174, 241, 0.25);
+}
+
+/* ------- TITRE + TEXTE -------- */
+.organes .card-title {
+  color: #fff;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.organes .card-text {
+  color: #dfe6fa;
+  font-size: 1.2rem;
+  margin-top: 5px;
+  line-height: 1.5rem;
+  text-align: justify;
+}
+
+/* ------- VIDEO STYLE -------- */
+.organes .ratio {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-top: 20px;
+  transition: 0.3s ease;
+  border: 1px solid rgba(0, 174, 241, 0.32);
+}
+
+.organes .ratio:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 174, 241, 0.45);
+}
+
+.organes iframe {
+  border: none;
+}
+/* ============================
+   SECTION : DIRECTION GÉNÉRALE
+=============================== */
+.direction-generale {
+  background: linear-gradient(
+      to bottom,
+      rgba(10, 25, 50, 0.92),
+      rgba(10, 25, 50, 0.88)
+  ),
+  url('/images/bg-pattern.png');
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 80px 0;
+  color: #ffffff;
+  position: relative;
+}
+
+/* Ligne décorative sous le titre */
+.direction-generale h2 {
+  font-weight: 700;
+  position: relative;
+  color: #ffffff;
+  letter-spacing: 1px;
+}
+
+.direction-generale h2::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: rgba(255,255,255,0.8);
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 10px;
+}
+
+/* Sous-titre / paragraphe intro */
+.direction-generale p.lead {
+  color: rgba(240, 240, 240, 0.9);
+  max-width: 900px;
+  margin: 0 auto 40px;
+  line-height: 1.7;
+}
+
+/* CARDS ÉQUIPE DG */
+.direction-card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 18px;
+  backdrop-filter: blur(5px);
+  padding-top: 20px;
+  transition: all 0.35s ease;
+}
+
+.direction-card:hover {
+  transform: translateY(-10px);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+}
+
+/* Images rondes pro */
+.direction-card img {
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 4px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+}
+
+.direction-card:hover img {
+  transform: scale(1.06);
+  border-color: #ffffff;
+}
+
+/* Nom */
+.direction-card h5 {
+  color: #ffffff;
+  font-size: 1.2rem;
+  margin-top: 15px;
+}
+
+/* Fonction */
+.direction-card p.text-muted {
+  color: rgba(220, 220, 220, 0.8) !important;
+  font-size: 0.9rem;
+}
+
+/* Description */
+.direction-card .card-text {
+  color: rgba(245, 245, 245, 0.85);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Vidéo */
+.direction-generale iframe {
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.45);
+}
+
+/* Texte sous vidéo */
+.direction-generale .text-muted {
+  color: rgba(230,230,230,0.8) !important;
+}
+
+/* Animation fade-up */
+.direction-card, 
+.direction-generale h2,
+.direction-generale p.lead,
+.direction-generale iframe {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 0.8s ease forwards;
+}
+
+/* ============================
+   SECTION ÉQUIPE — DESIGN MODERNE
+=============================== */
+.equipe {
+ background: white;
+  padding: 80px 0;
+  position: relative;
+}
+
+/* Effet décoratif light spot */
+.equipe::before {
+  content: "";
+  position: absolute;
+  top: -80px;
+  right: -100px;
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(255,255,255,0.15), transparent 70%);
+  filter: blur(50px);
+  z-index: 0;
+}
+
+.equipe h2 {
+  color: #0B1F44;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 2;
+}
+
+/* Cards en style verre */
+.equipe .card {
+  background: rgba(255,255,255,0.07);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.15);
+  backdrop-filter: blur(8px);
+  padding-top: 40px;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  transition: all 0.35s ease;
+}
+
+/* Effet hover moderne */
+.equipe .card:hover {
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  border-color: rgba(255,255,255,0.35);
+}
+
+/* Halo lumineux derrière la photo */
+.equipe .card::before {
+  content: "";
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 130px;
+  height: 130px;
+  background: radial-gradient(circle, rgba(255,255,255,0.22), transparent 70%);
+  filter: blur(25px);
+  z-index: 1;
+}
+
+/* Image */
+.equipe img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  border: 3px solid rgba(255,255,255,0.4);
+  transition: all 0.3s ease;
+}
+
+/* Effet hover image */
+.equipe .card:hover img {
+  transform: scale(1.08);
+  border-color: #ffffff;
+}
+
+/* Nom */
+.equipe h6 {
+  color: #0B1F44;
+  font-size: 1.05rem;
+  margin-top: 18px;
+  margin-bottom: 6px;
+}
+
+/* Fonction (tag style badge premium) */
+.equipe .text-muted {
+  color: #0B1F44;
+  font-size: 0.85rem;
+  background: rgba(255,255,255,0.09);
+  padding: 4px 10px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-top: 5px;
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+/* Animation apparition des cartes */
+.equipe .card {
+  opacity: 0;
+  transform: translateY(40px);
+  animation: riseIn 0.8s ease forwards;
+}
+
+@keyframes riseIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* ------- RESPONSIVE -------- */
+@media (max-width: 992px) {
+  .organes .card {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .organes {
+    padding: 60px 0;
+  }
+  
+  .organes h2 {
+    font-size: 1.6rem;
+  }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+   </style>
+   
 <section class="organes py-5 bg-light" id="organes">
   <div class="container">
     <h2 class="text-center mb-4">Organes Statutaires</h2>
@@ -194,6 +539,11 @@
             <i class="fa-solid fa-users fa-3x mb-3" style="color: #0B1F44;"></i>
             <h5 class="card-title fw-bold">Assemblée Générale</h5>
             <p class="card-text">
+              Organe suprême de décision regroupant tous les membres de l’association.
+              Organe suprême de décision regroupant tous les membres de l’association.
+              Organe suprême de décision regroupant tous les membres de l’association.
+              Organe suprême de décision regroupant tous les membres de l’association.
+              Organe suprême de décision regroupant tous les membres de l’association.
               Organe suprême de décision regroupant tous les membres de l’association.
             </p>
           </div>
@@ -215,6 +565,11 @@
             <h5 class="card-title fw-bold">Conseil d’Administration</h5>
             <p class="card-text">
               Il définit les grandes orientations stratégiques et veille à la bonne gouvernance.
+              Il définit les grandes orientations stratégiques et veille à la bonne gouvernance.
+              Il définit les grandes orientations stratégiques et veille à la bonne gouvernance.
+              Il définit les grandes orientations stratégiques et veille à la bonne gouvernance.
+              Il définit les grandes orientations stratégiques et veille à la bonne gouvernance.
+              Il définit les grandes orientations stratégiques et veille à la bonne gouvernance.
             </p>
           </div>
           <div class="ratio ratio-16x9">
@@ -235,6 +590,10 @@
             <h5 class="card-title fw-bold">Direction Exécutive</h5>
             <p class="card-text">
               Elle est chargée de la mise en œuvre des décisions et de la gestion opérationnelle.
+              Elle est chargée de la mise en œuvre des décisions et de la gestion opérationnelle.
+              Elle est chargée de la mise en œuvre des décisions et de la gestion opérationnelle.
+              Elle est chargée de la mise en œuvre des décisions et de la gestion opérationnelle.
+              Elle est chargée de la mise en œuvre des décisions et de la gestion opérationnelle.
             </p>
           </div>
           <div class="ratio ratio-16x9">
@@ -250,52 +609,6 @@
     </div>
   </div>
 </section>
-
-<!-- ======== ÉQUIPE ======== -->
-<section class="equipe py-5" id="equipe">
-  <div class="container">
-    <h2 class="text-center mb-4">Notre Équipe</h2>
-    <div class="row g-4">
-      <div class="col-md-3">
-        <div class="card border-0 shadow text-center">
-          <img src="/images/Capture.PNG" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="">
-          <div class="card-body">
-            <h6 class="fw-bold">Nom Prénom</h6>
-            <p class="text-muted mb-0">Directeur Général</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card border-0 shadow text-center">
-          <img src="/images/Capture.PNG" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="">
-          <div class="card-body">
-            <h6 class="fw-bold">Nom Prénom</h6>
-            <p class="text-muted mb-0">Chef d’Agence</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card border-0 shadow text-center">
-          <img src="/images/Capture.PNG" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="">
-          <div class="card-body">
-            <h6 class="fw-bold">Nom Prénom</h6>
-            <p class="text-muted mb-0">Responsable Crédit</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="card border-0 shadow text-center">
-          <img src="./images/Capture.PNG" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="">
-          <div class="card-body">
-            <h6 class="fw-bold">Nom Prénom</h6>
-            <p class="text-muted mb-0">Agent Collecteur</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- SECTION DIRECTION GENERALE -->
 <section class="direction-generale py-5" id="direction">
   <div class="container">
@@ -361,34 +674,6 @@
   </div>
 </section>
 
-
-<!-- VISION / MISSION / VALEURS -->
-<section class="container py-5 fade-in" id="vision">
-  <div class="row g-4 text-center">
-    <div class="col-md-4">
-      <div class="service-card p-4">
-        <div class="service-icon mb-3"><i class="fa-solid fa-eye"></i></div>
-        <h4>Notre Vision</h4>
-        <p>Promouvoir l’épanouissement économique à travers une inclusion financière durable.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="service-card p-4">
-        <div class="service-icon mb-3"><i class="fa-solid fa-bullseye"></i></div>
-        <h4>Notre Mission</h4>
-        <p>Accompagner les membres dans leurs projets grâce à des services financiers accessibles et sûrs.</p>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="service-card p-4">
-        <div class="service-icon mb-3"><i class="fa-solid fa-heart"></i></div>
-        <h4>Nos Valeurs</h4>
-        <p>Solidarité, confiance, transparence et proximité avec nos membres.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
   <!--Partenaires-->
 
 <section class="partenaires text-center fade-in" id="partenaire">
@@ -408,6 +693,50 @@
        <img src="./images/R4.jpg" alt="">
        <img src="./images/R6.jpeg" alt="">
   
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ======== ÉQUIPE ======== -->
+<section class="equipe py-5" id="equipe">
+  <div class="container">
+    <h2 class="text-center mb-4">Notre Équipe</h2>
+    <div class="row g-4">
+      <div class="col-md-3">
+        <div class="card border-0 shadow text-center">
+          <img src="/images/Capture.PNG" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="">
+          <div class="card-body">
+            <h6 class="fw-bold">Nom Prénom</h6>
+            <p class="text-muted mb-0">Directeur Général</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 shadow text-center">
+          <img src="/images/Capture.PNG" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="">
+          <div class="card-body">
+            <h6 class="fw-bold">Nom Prénom</h6>
+            <p class="text-muted mb-0">Chef d’Agence</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 shadow text-center">
+          <img src="/images/Capture.PNG" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="">
+          <div class="card-body">
+            <h6 class="fw-bold">Nom Prénom</h6>
+            <p class="text-muted mb-0">Responsable Crédit</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="card border-0 shadow text-center">
+          <img src="./images/Capture.PNG" class="card-img-top rounded-circle mx-auto mt-3" style="width:120px; height:120px; object-fit:cover;" alt="">
+          <div class="card-body">
+            <h6 class="fw-bold">Nom Prénom</h6>
+            <p class="text-muted mb-0">Agent Collecteur</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
