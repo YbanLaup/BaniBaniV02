@@ -1,193 +1,311 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Microfinance - solutions financières adaptées, crédits, épargne, services innovants.">
+  <meta name="description"
+    content="Microfinance - solutions financières adaptées, crédits, épargne, services innovants.">
   <title>Microfinance - Votre partenaire de confiance</title>
-  
+
   <!-- Bootstrap & Font Awesome -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  
+
   <!-- Custom CSS -->
   <link href="style3.css" rel="stylesheet">
+
 </head>
+
 <body>
-
   <!-- ======== NAVBAR ======== -->
-<!-- TOPBAR -->
-<div class="topbar">
-  <div class="container d-flex justify-content-between align-items-center flex-wrap">
-    <!-- Gauche : Date du jour -->
-    <div class="topbar-left" id="current-date"></div>
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <!-- Gauche : Date du jour -->
+      <div class="topbar-left" id="current-date"></div>
 
-    <!-- Centre : Bande d'annonce -->
-    <div class="topbar-center text-center">
-      <div class="annonce-container">
-        <div class="annonce-track">
-          <a href="actualites.html#recrutement" class="annonce">Annonce rapide : Bani Bani recrute un stagiaire !</a>
-          <a href="actualites.html#offre" class="annonce">Nouveau service : ouverture de compte en ligne simplifiée.</a>
-          <a href="actualites.html#evenement" class="annonce">Participez à notre forum économique ce vendredi.</a>
-          <a href="actualites.html#promotion" class="annonce">Promotion spéciale : crédits à taux réduit jusqu’à fin du mois.</a>
-          <a href="actualites.html#innovation" class="annonce">Découvrez notre nouvelle application mobile Bani Bani Pro.</a>
+      <!-- Centre : Bande d'annonce -->
+      <div class="topbar-center text-center">
+        <div class="annonce-container">
+          <div class="annonce-track">
+            <a href="actualites.html#recrutement" class="annonce">Annonce rapide : Bani Bani recrute un stagiaire !</a>
+            <a href="actualites.html#offre" class="annonce">Nouveau service : ouverture de compte en ligne
+              simplifiée.</a>
+            <a href="actualites.html#evenement" class="annonce">Participez à notre forum économique ce vendredi.</a>
+            <a href="actualites.html#promotion" class="annonce">Promotion spéciale : crédits à taux réduit jusqu’à fin
+              du mois.</a>
+            <a href="actualites.html#innovation" class="annonce">Découvrez notre nouvelle application mobile Bani Bani
+              Pro.</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Droite : Bouton "Portez plainte" -->
-    <div class="topbar-right">
-      <a href="plainte.html" class="btn-plainte">
-        <i class="bi bi-exclamation-triangle-fill me-1"></i> Portez plainte
+      <!-- Droite : Bouton "Portez plainte" -->
+      <div class="topbar-right">
+        <a href="Plainte.html" class="btn-plainte">
+          <i class="bi bi-exclamation-triangle-fill me-1"></i> Portez plainte
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index2.html">
+        <img src="./images/WhatsApp Image 2025-10-12 at 10.35.02.jpeg" alt="Logo" width="500" height="500" class="me-2">
+        BANI-BANI
       </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index2.html">Accueil</a></li>
+
+          <!-- À PROPOS -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="About.html" id="aproposDropdown" role="button"
+              data-bs-toggle="dropdown">
+              À propos
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+              <li><a class="dropdown-item" href="About.html">Présentation</a></li>
+              <li><a class="dropdown-item" href="About.html#presentation">Organes statutaires</a></li>
+              <li><a class="dropdown-item" href="About.html#direction">Direction Générale</a></li>
+              <li><a class="dropdown-item" href="About.html#equipe">Équipe</a></li>
+              <li><a class="dropdown-item" href="About.html">Vision</a></li>
+              <li><a class="dropdown-item" href="About.html#faq">Questions fréquentes</a></li>
+              <li><a class="dropdown-item" href="About.html#partenaire">Partenaires</a></li>
+            </ul>
+          </li>
+
+          <!-- AGENCES -->
+          <li class="nav-item"><a class="nav-link text-white" href="NosAgence.html">Nos Agences</a></li>
+          </li>
+          <!-- GAlerie -->
+          <li class="nav-item"><a class="nav-link text-white" href="Album.html">Galerie</a></li>
+          </li>
+
+          <!-- ACTUALITÉS -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="actualitesDropdown" role="button"
+              data-bs-toggle="dropdown">
+              Actualités
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+              <li><a class="dropdown-item" href="News.html#actualites">Actualités</a></li>
+              <li><a class="dropdown-item" href="News.html#actualites">Appels d'offres</a></li>
+              <li><a class="dropdown-item" href="News.html#stage">Emplois / Stages</a></li>
+              <li><a class="dropdown-item" href="News.html#evenement">Événements</a></li>
+              <li><a class="dropdown-item" href="News.html#evenement">FAQ</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-white" href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</div>
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold d-flex align-items-center" href="index2.html">
-      <img src="./images/WhatsApp Image 2025-10-12 at 10.35.02.jpeg" alt="Logo" width="500" height="500" class="me-2">
-      BANI-BANI
-    </a>
+  </nav>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-white" href="index2.html">Accueil</a></li>
-
-        <!-- À PROPOS -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="About.html" id="aproposDropdown" role="button" data-bs-toggle="dropdown">
-            À propos
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
-            <li><a class="dropdown-item" href="About.html">Présentation</a></li>
-            <li><a class="dropdown-item" href="About.html#presentation">Organes statutaires</a></li>
-            <li><a class="dropdown-item" href="About.html#direction">Direction Générale</a></li>
-            <li><a class="dropdown-item" href="About.html#equipe">Équipe</a></li>
-            <li><a class="dropdown-item" href="About.html">Vision</a></li>
-            <li><a class="dropdown-item" href="About.html#faq">Questions fréquentes</a></li>
-            <li><a class="dropdown-item" href="About.html#partenaire">Partenaires</a></li>
-            <li><a class="dropdown-item" href="Album.html">Galerie</a></li>
-          </ul>
-        </li>
-
-        <!-- AGENCES -->
-        <li class="nav-item"><a class="nav-link text-white" href="NosAgence.html">Nos Agences</a></li>
-        </li>
-
-        <!-- ACTUALITÉS -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="actualitesDropdown" role="button" data-bs-toggle="dropdown">
-            Actualités
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
-            <li><a class="dropdown-item" href="News.html#actualites">Actualités</a></li>
-            <li><a class="dropdown-item" href="News.html#actualites">Appels d'offres</a></li>
-            <li><a class="dropdown-item" href="News.html#stage">Emplois / Stages</a></li>
-            <li><a class="dropdown-item" href="News.html#evenement">Événements</a></li>
-            <li><a class="dropdown-item" href="News.html#evenement">FAQ</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link text-white" href="Contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
   <style>
-    #faq-agences .accordion-button {
-    background-color: #0B1F44;
-    color: #fff;
-    font-weight: 500;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    padding: 1rem 1.25rem;
+ /* ============================================================
+   SECTION INTRO
+   Style moderne + spacing + responsive
+============================================================ */
+.section-intro {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.section-intro h2 {
+  color: #0B1F44;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.section-intro p {
+  color: #444;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+
+
+/* ============================================================
+   SIÈGE SOCIAL
+============================================================ */
+#siege-social {
+  background: linear-gradient(135deg, #f8f9fb, #eef2f7);
+}
+
+#siege-social h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #0B1F44;
+}
+
+#siege-social p,
+#siege-social ul li {
+  font-size: 1.05rem;
+  color: #333;
+}
+
+#siege-social img {
+  border-radius: 14px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+  object-fit: cover;
+}
+
+
+
+/* ============================================================
+   LISTE DES AGENCES — CARDS PREMIUM
+============================================================ */
+.agence-card {
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  padding: 15px;
+  transition: 0.35s ease;
+  border: 1px solid #e8e8e8;
+}
+
+.agence-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  border-color: #0B1F44;
+}
+
+.agence-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 14px;
+  margin-bottom: 15px;
+}
+
+.agence-card h4 {
+  font-weight: 700;
+  color: #0B1F44;
+  margin-bottom: 8px;
+}
+
+.agence-card p {
+  margin-bottom: 5px;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.agence-card .btn {
+  background: #0B1F44;
+  color: white;
+  border-radius: 10px;
+  padding: 6px 12px;
+}
+
+.agence-card .btn:hover {
+  background: #10305c;
+}
+
+
+
+/* ============================================================
+   FAQ — STYLE PREMIUM
+============================================================ */
+#faq-agences {
+  background: #f5f7fa;
+}
+
+#faq-agences h2 {
+  color: #0B1F44;
+  font-weight: 800;
+}
+
+#faq-agences .accordion-button {
+  background: white;
+  color: #0B1F44;
+  font-weight: 600;
+  border-radius: 10px !important;
+  margin-bottom: 10px;
+  border: 1px solid #dcdcdc;
+}
+
+#faq-agences .accordion-button:hover {
+  background: #eef3fa;
+}
+
+#faq-agences .accordion-body {
+  background: white;
+  border-left: 3px solid #0B1F44;
+  border-radius: 0 0 10px 10px;
+  color: #333;
+}
+
+
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+
+/* Tablettes */
+@media (max-width: 992px) {
+  #siege-social img {
+    height: 280px;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+
+  .section-intro h2 {
+    font-size: 1.7rem;
   }
 
-  #faq-agences .accordion-button:not(.collapsed) {
-    background-color: #00AEEF;
-    color: #fff;
+  #siege-social h2 {
+    font-size: 1.6rem;
+    text-align: center;
   }
 
-  #faq-agences .accordion-body {
-    background-color: #f8f9fa;
-    color: #0B1F44;
-    padding: 1rem 1.25rem;
-    font-size: 0.95rem;
+  #siege-social .col-md-6:last-child {
+    text-align: center;
   }
 
-  #faq-agences h2 {
-    letter-spacing: 0.5px;
+  .agence-card img {
+    height: 160px;
   }
-    /* ===== CARTE ===== */
-    #map {
-      height: 200px;
-      width: 100%;
-      border-radius: 12px;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    }
 
-    /* ===== SECTION AGENCES ===== */
-    .agence-card {
-      background: rgba(11, 31, 68, 0.9);
-      color: white;
-      border-radius: 10px;
-      padding: 25px;
-      text-align: center;
-      transition: all 0.3s ease;
-      box-shadow: 0 0 15px rgba(0,0,0,0.2);
-    }
-    .agence-card:hover {
-      background: rgba(0, 174, 239, 0.9);
-      transform: translateY(-5px);
-    }
-    .agence-card img {
-      border-radius: 10px;
-      height: 180px;
-      object-fit: cover;
-      width: 100%;
-      margin-bottom: 15px;
-    }
-    .agence-card h4 {
-      font-weight: 600;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-    .agence-card p {
-      font-size: 0.95rem;
-      margin-bottom: 10px;
-    }
-    .agence-card .btn {
-      background-color: rgba(11, 31, 68, 0.9);
-      color: #fff;
-      border: none;
-      transition: background 0.3s;
-    }
-    .agence-card .btn:hover {
-      background-color: rgba(11, 31, 68, 0.9);
-    }
+  .agence-card {
+    padding: 12px;
+  }
+}
 
-    /* Section info */
-    .section-intro {
-      text-align: center;
-      max-width: 700px;
-      margin: auto;
-      color: #333;
-      margin-bottom: 40px;
-      font-size: 1,5rem;
-    }
-    .section-intro p {
-      color: #0B1F44;
-      font-size: 5px;
-    }
+/* Très petits téléphones */
+@media (max-width: 576px) {
+
+  .section-intro p {
+    font-size: 1rem;
+  }
+
+  #siege-social img {
+    height: 220px;
+  }
+
+  .agence-card h4 {
+    font-size: 1.1rem;
+  }
+
+  .agence-card p {
+    font-size: 0.9rem;
+  }
+}
+
   </style>
   <!-- ======== HERO ======== -->
   <section class="hero-section d-flex align-items-center justify-content-center text-center"
-  style="background: url('./images/F2.jpg') center/cover no-repeat; height: 60vh; position: relative;">
+  style="background: url('./images/2.jpg') center/cover no-repeat; height: 40vh; position: relative;">
     <div class="overlay" style="position:absolute; inset:0; background: rgba(0,0,0,0.6);"></div>
     <div class="container position-relative text-white">
       <h1 class="fw-bold display-4">Nos Agences</h1>
