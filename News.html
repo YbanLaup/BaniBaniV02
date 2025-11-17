@@ -1,104 +1,124 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Microfinance - solutions financières adaptées, crédits, épargne, services innovants.">
+  <meta name="description"
+    content="Microfinance - solutions financières adaptées, crédits, épargne, services innovants.">
   <title>Microfinance - Votre partenaire de confiance</title>
-  
+
   <!-- Bootstrap & Font Awesome -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-  
+
   <!-- Custom CSS -->
   <link href="style3.css" rel="stylesheet">
+
 </head>
+
 <body>
-
   <!-- ======== NAVBAR ======== -->
-<!-- TOPBAR -->
-<div class="topbar">
-  <div class="container d-flex justify-content-between align-items-center flex-wrap">
-    <!-- Gauche : Date du jour -->
-    <div class="topbar-left" id="current-date"></div>
+  <!-- TOPBAR -->
+  <div class="topbar">
+    <div class="container d-flex justify-content-between align-items-center flex-wrap">
+      <!-- Gauche : Date du jour -->
+      <div class="topbar-left" id="current-date"></div>
 
-    <!-- Centre : Bande d'annonce -->
-    <div class="topbar-center text-center">
-      <div class="annonce-container">
-        <div class="annonce-track">
-          <a href="actualites.html#recrutement" class="annonce">Annonce rapide : Bani Bani recrute un stagiaire !</a>
-          <a href="actualites.html#offre" class="annonce">Nouveau service : ouverture de compte en ligne simplifiée.</a>
-          <a href="actualites.html#evenement" class="annonce">Participez à notre forum économique ce vendredi.</a>
-          <a href="actualites.html#promotion" class="annonce">Promotion spéciale : crédits à taux réduit jusqu’à fin du mois.</a>
-          <a href="actualites.html#innovation" class="annonce">Découvrez notre nouvelle application mobile Bani Bani Pro.</a>
+      <!-- Centre : Bande d'annonce -->
+      <div class="topbar-center text-center">
+        <div class="annonce-container">
+          <div class="annonce-track">
+            <a href="actualites.html#recrutement" class="annonce">Annonce rapide : Bani Bani recrute un stagiaire !</a>
+            <a href="actualites.html#offre" class="annonce">Nouveau service : ouverture de compte en ligne
+              simplifiée.</a>
+            <a href="actualites.html#evenement" class="annonce">Participez à notre forum économique ce vendredi.</a>
+            <a href="actualites.html#promotion" class="annonce">Promotion spéciale : crédits à taux réduit jusqu’à fin
+              du mois.</a>
+            <a href="actualites.html#innovation" class="annonce">Découvrez notre nouvelle application mobile Bani Bani
+              Pro.</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <!-- Droite : Bouton "Portez plainte" -->
-    <div class="topbar-right">
-      <a href="plainte.html" class="btn-plainte">
-        <i class="bi bi-exclamation-triangle-fill me-1"></i> Portez plainte
+      <!-- Droite : Bouton "Portez plainte" -->
+      <div class="topbar-right">
+        <a href="Plainte.html" class="btn-plainte">
+          <i class="bi bi-exclamation-triangle-fill me-1"></i> Portez plainte
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index2.html">
+        <img src="./images/WhatsApp Image 2025-10-12 at 10.35.02.jpeg" alt="Logo" width="500" height="500" class="me-2">
+        BANI-BANI
       </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link text-white" href="index2.html">Accueil</a></li>
+
+          <!-- À PROPOS -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="About.html" id="aproposDropdown" role="button"
+              data-bs-toggle="dropdown">
+              À propos
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+              <li><a class="dropdown-item" href="About.html">Présentation</a></li>
+              <li><a class="dropdown-item" href="About.html#presentation">Organes statutaires</a></li>
+              <li><a class="dropdown-item" href="About.html#direction">Direction Générale</a></li>
+              <li><a class="dropdown-item" href="About.html#equipe">Équipe</a></li>
+              <li><a class="dropdown-item" href="About.html">Vision</a></li>
+              <li><a class="dropdown-item" href="About.html#faq">Questions fréquentes</a></li>
+              <li><a class="dropdown-item" href="About.html#partenaire">Partenaires</a></li>
+            </ul>
+          </li>
+
+          <!-- AGENCES -->
+          <li class="nav-item"><a class="nav-link text-white" href="NosAgence.html">Nos Agences</a></li>
+          </li>
+          <!-- GAlerie -->
+          <li class="nav-item"><a class="nav-link text-white" href="Album.html">Galerie</a></li>
+          </li>
+
+          <!-- ACTUALITÉS -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle text-white" href="#" id="actualitesDropdown" role="button"
+              data-bs-toggle="dropdown">
+              Actualités
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end shadow-lg">
+              <li><a class="dropdown-item" href="News.html#actualites">Actualités</a></li>
+              <li><a class="dropdown-item" href="News.html#actualites">Appels d'offres</a></li>
+              <li><a class="dropdown-item" href="News.html#stage">Emplois / Stages</a></li>
+              <li><a class="dropdown-item" href="News.html#evenement">Événements</a></li>
+              <li><a class="dropdown-item" href="News.html#evenement">FAQ</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link text-white" href="Contact.html">Contact</a></li>
+        </ul>
+      </div>
     </div>
-  </div>
-</div>
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold d-flex align-items-center" href="index2.html">
-      <img src="./images/WhatsApp Image 2025-10-12 at 10.35.02.jpeg" alt="Logo" width="500" height="500" class="me-2">
-      BANI-BANI
-    </a>
+  </nav>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link text-white" href="index2.html">Accueil</a></li>
-
-        <!-- À PROPOS -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="About.html" id="aproposDropdown" role="button" data-bs-toggle="dropdown">
-            À propos
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
-            <li><a class="dropdown-item" href="About.html">Présentation</a></li>
-            <li><a class="dropdown-item" href="About.html#presentation">Organes statutaires</a></li>
-            <li><a class="dropdown-item" href="About.html#direction">Direction Générale</a></li>
-            <li><a class="dropdown-item" href="About.html#equipe">Équipe</a></li>
-            <li><a class="dropdown-item" href="About.html">Vision</a></li>
-            <li><a class="dropdown-item" href="About.html#faq">Questions fréquentes</a></li>
-            <li><a class="dropdown-item" href="About.html#partenaire">Partenaires</a></li>
-            <li><a class="dropdown-item" href="Album.html">Galerie</a></li>
-          </ul>
-        </li>
-
-        <!-- AGENCES -->
-        <li class="nav-item"><a class="nav-link text-white" href="NosAgence.html">Nos Agences</a></li>
-        </li>
-
-        <!-- ACTUALITÉS -->
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-white" href="#" id="actualitesDropdown" role="button" data-bs-toggle="dropdown">
-            Actualités
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end shadow-lg">
-            <li><a class="dropdown-item" href="News.html#actualites">Actualités</a></li>
-            <li><a class="dropdown-item" href="News.html#actualites">Appels d'offres</a></li>
-            <li><a class="dropdown-item" href="News.html#stage">Emplois / Stages</a></li>
-            <li><a class="dropdown-item" href="News.html#evenement">Événements</a></li>
-            <li><a class="dropdown-item" href="News.html#evenement">FAQ</a></li>
-          </ul>
-        </li>
-        <li class="nav-item"><a class="nav-link text-white" href="Contact.html">Contact</a></li>
-      </ul>
+<!-- ===== Hero ===== -->
+  <section class="hero-section d-flex align-items-center justify-content-center text-center"
+  style="background: url('./images/F2.jpg') center/cover no-repeat; height: 40vh; position: relative;">
+    <div class="overlay" style="position:absolute; inset:0; background: rgba(0,0,0,0.6);"></div>
+    <div class="container position-relative text-white">
+      <h1 class="fw-bold display-4">Actualités a BANI-BANI</h1>
+      <p class="lead">Tout nos offres, evenements et actualités a votre disposition</p>
     </div>
-  </div>
-</nav>
-  <style>
+  </section>
+    <style>
 /* ===== Hero ===== */
 .hero-section { height: 50vh; position: relative; background: url('./images/actualites-hero.jpg') center/cover no-repeat; }
 .overlay { position:absolute; inset:0; background: rgba(0,0,0,0.6); }
@@ -152,15 +172,6 @@
 }
 
 </style>
-<!-- ===== Hero ===== -->
-  <section class="hero-section d-flex align-items-center justify-content-center text-center"
-  style="background: url('./images/F2.jpg') center/cover no-repeat; height: 60vh; position: relative;">
-    <div class="overlay" style="position:absolute; inset:0; background: rgba(0,0,0,0.6);"></div>
-    <div class="container position-relative text-white">
-      <h1 class="fw-bold display-4">Actualités a BANI-BANI</h1>
-      <p class="lead">Tout nos offres, evenements et actualités a votre disposition</p>
-    </div>
-  </section>
 
 <!-- ===== Actualités Photos & Vidéos ===== -->
 <section class="py-5 container fade-in" id="actualites">
