@@ -13,6 +13,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 
   <!-- Custom CSS -->
+  <link rel="stylesheet" href="style2.css">
   <link href="style3.css" rel="stylesheet">
 
 </head>
@@ -172,70 +173,6 @@
       </div>
     </div>
   </nav>
-
-  <!-- ================= CSS MEGA MENU ================= -->
-  <style>
-    /* Mega menu container */
-    .mega-menu {
-      position: fixed;
-      top: 60px;
-      /* hauteur navbar */
-      left: 0;
-      right: 0;
-      background: #ffffff;
-    }
-
-    /* Titres */
-    .mega-title {
-      font-weight: 700;
-      color: #0B1F44;
-      margin-bottom: 15px;
-    }
-
-    /* Liens */
-    .mega-link {
-      display: block;
-      color: #0B1F44;
-      text-decoration: none;
-      margin-bottom: 8px;
-      font-weight: 500;
-    }
-
-    .mega-link:hover {
-      color: #00AEEF;
-    }
-
-    /* Carte image */
-    .mega-card {
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
-    }
-
-    .mega-card img {
-      width: 100%;
-      height: 150px;
-      object-fit: cover;
-    }
-
-    .mega-card-body {
-      padding: 15px;
-    }
-
-    .mega-card-body h6 {
-      font-weight: 700;
-      color: #0B1F44;
-    }
-
-    /* Mobile */
-    @media (max-width: 991px) {
-      .mega-menu {
-        position: static;
-      }
-    }
-  </style>
-
-
   <!-- HERO SLIDER -->
   <div id="hero" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -273,6 +210,11 @@
       </div>
 
       <div class="heritage-content">
+
+        <!-- IMAGE -->
+        <div class="heritage-image">
+          <img src="./images/IMG_1356.jpg" alt="Notre héritage">
+        </div>
 
         <!-- TEXTE -->
         <div class="heritage-text">
@@ -339,192 +281,10 @@
             </a>
 
           </div>
-
         </div>
-
-        <!-- IMAGE -->
-        <div class="heritage-image">
-          <img src="./images/IMG_1356.jpg" alt="Notre héritage">
-        </div>
-
       </div>
     </div>
   </section>
-
-  <style>
-    /* ================= NOTRE HERITAGE ================= */
-    .heritage-section {
-      padding: 50px 0;
-      background: #33343415;
-    }
-
-    /* En-tête */
-    .section-header {
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    .section-title {
-      font-size: 2.6rem;
-      font-weight: 700;
-      color: #0B1F44;
-    }
-
-    .section-subtitle {
-      font-size: 0.95rem;
-      color: #666;
-      margin-top: 5px;
-    }
-
-    /* Layout */
-    .heritage-content {
-      display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
-      gap: 50px;
-      align-items: center;
-    }
-
-    /* Texte */
-    .heritage-title {
-      font-size: 1.7rem;
-      color: #0B1F44;
-      margin-bottom: 18px;
-    }
-
-    .heritage-description {
-      font-size: 0.96rem;
-      line-height: 1.8;
-      color: #555;
-      margin-bottom: 40px;
-      max-width: 560px;
-    }
-
-    /* ===== VALEURS - CARDS ===== */
-    .heritage-values {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    /* Card */
-    .value-card {
-      background: #ffffff;
-      border-radius: 18px;
-      padding: 26px 20px;
-      text-align: center;
-      box-shadow: 0 14px 35px rgba(0, 0, 0, 0.08);
-      transition: all 0.35s ease;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      min-height: 210px;
-    }
-
-    /* Icône */
-    .value-icon {
-      width: 55px;
-      height: 55px;
-      border-radius: 14px;
-      background: rgba(0, 174, 239, 0.1);
-      color: #00AEEF;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.4rem;
-      margin-bottom: 15px;
-    }
-
-    /* Titre */
-    .value-card h5 {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: #0B1F44;
-      margin-bottom: 8px;
-    }
-
-    /* Texte */
-    .value-card p {
-      font-size: 0.82rem;
-      color: #666;
-      line-height: 1.6;
-    }
-
-    /* Hover */
-    .value-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15);
-    }
-
-    .value-card:hover .value-icon {
-      background: #00AEEF;
-      color: #fff;
-    }
-
-    /* Card lien */
-    .value-link {
-      text-decoration: none;
-      background: #0B1F44;
-    }
-
-    .value-link h5,
-    .value-link p,
-    .value-link .value-icon {
-      color: #fff;
-    }
-
-    .value-link .value-icon {
-      background: rgba(255, 255, 255, 0.15);
-    }
-
-    .value-link:hover {
-      background: #00AEEF;
-    }
-
-    /* Image */
-    .heritage-image img {
-      width: 100%;
-      max-height: 950px;
-      height: 90vh;
-      object-fit: cover;
-      border-radius: 20px;
-      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
-    }
-
-    @media (max-width: 992px) {
-      .heritage-values {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 576px) {
-      .heritage-values {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    /* ================= RESPONSIVE ================= */
-    @media (max-width: 992px) {
-      .heritage-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
-
-      .heritage-description {
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .heritage-values {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 576px) {
-      .heritage-values {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
   <!-- ===== MISSION • VISION • OBJECTIFS ===== -->
   <section id="about" class="about fade-in">
 
@@ -576,40 +336,1142 @@
           </span>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="key-stats" id="stats">
+    <div class="container">
 
-      <!-- ===== IMAGE + TEXTE ===== -->
-      <div class="row align-items-center">
+      <!-- TITRE -->
+      <div class="section-header reveal">
+        <h3 class="section-title">Nos chiffres clés</h3>
+        <p class="section-subtitle">
+          Des résultats concrets au service du développement financier
+        </p>
+      </div>
 
-        <!-- TEXTE -->
-        <div class="col-md-6 mb-4 mb-md-0">
-          <h2 class="fw-bold mb-3">BANI-BANI, un partenaire de confiance</h2>
-          <p class="lead text-muted">
-            Depuis plus de huit ans, BANI-BANI accompagne les familles,
-            les entrepreneurs, les artisans et les jeunes porteurs de projets
-            à chaque étape de leur parcours financier.
-          </p>
+      <div class="stats-wrapper">
 
-          <p class="text-muted">
-            À travers des services simples, flexibles et accessibles,
-            nous œuvrons pour une finance inclusive qui crée de la valeur,
-            renforce la résilience économique et soutient le développement
-            durable des communautés.
+        <!-- BLOC PRINCIPAL -->
+        <div class="stats-highlight reveal">
+          <span class="badge">08 années d’impact</span>
+
+          <div class="big-number counter" data-target="700000">0</div>
+          <span class="plus">+</span>
+
+          <h4>Clients actifs</h4>
+
+          <p>
+            Plus de <strong>700 000 Togolais</strong> accompagnés à travers
+            des solutions financières inclusives, durables et adaptées
+            aux réalités locales.
           </p>
         </div>
 
-        <!-- IMAGE -->
-        <div class="col-md-6">
-          <img src="./images/IMG_1356.jpg" alt="Mission et vision de BANI-BANI" class="img-fluid rounded shadow">
+        <!-- CARTES -->
+        <div class="stats-cards">
+
+          <div class="stat-card reveal">
+            <div class="stat-icon">
+              <i class="fas fa-wallet"></i>
+            </div>
+            <h5>Actifs mobilisés</h5>
+            <span class="counter" data-target="120">0</span>
+            <small>Mds FCFA</small>
+          </div>
+
+          <div class="stat-card reveal">
+            <div class="stat-icon">
+              <i class="fas fa-coins"></i>
+            </div>
+            <h5>Actifs collectés</h5>
+            <span class="counter" data-target="95">0</span>
+            <small>Mds FCFA</small>
+          </div>
+
+          <div class="stat-card reveal">
+            <div class="stat-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h5>Agences</h5>
+            <span class="counter" data-target="45">0</span>
+            <small>+</small>
+          </div>
+
+          <div class="stat-card reveal">
+            <div class="stat-icon">
+              <i class="fas fa-hand-holding-usd"></i>
+            </div>
+            <h5>Crédits accordés</h5>
+            <span class="counter" data-target="210000">0</span>
+            <small>+</small>
+          </div>
+
         </div>
 
       </div>
     </div>
   </section>
+
+  <script>
+    /* ===== SCROLL REVEAL ===== */
+    const reveals = document.querySelectorAll(".reveal");
+
+    const revealObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("show");
+          }
+        });
+      },
+      { threshold: 0.15 }
+    );
+
+    reveals.forEach(el => revealObserver.observe(el));
+
+    /* ===== COUNTER ANIMATION ===== */
+    const counters = document.querySelectorAll(".counter");
+
+    const counterObserver = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+
+          const counter = entry.target;
+          const target = +counter.dataset.target;
+          let current = 0;
+          const increment = target / 120;
+
+          const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+              counter.innerText = Math.floor(current).toLocaleString();
+              requestAnimationFrame(updateCounter);
+            } else {
+              counter.innerText = target.toLocaleString();
+            }
+          };
+
+          updateCounter();
+          counterObserver.unobserve(counter);
+        });
+      },
+      { threshold: 0.6 }
+    );
+
+    counters.forEach(counter => counterObserver.observe(counter));
+  </script>
+
+  <section class="video-section" id="videos">
+    <div class="container">
+
+      <div class="section-header">
+        <h3 class="section-title text-center">Nos Vidéos</h3>
+        <p class="section-subtitle text-center">
+          Découvrez nos actions, nos services et notre impact sur le terrain
+        </p>
+      </div>
+
+      <div class="video-slider-wrapper">
+
+        <button class="video-nav prev" aria-label="Vidéo précédente">❮</button>
+
+        <div class="video-slider">
+
+          <!-- VIDEO 1 -->
+          <div class="video-slide active">
+            <div class="video-frame">
+              <video src="./videos/vid1.mp4" controls></video>
+            </div>
+            <div class="video-caption">
+              <h4>Présentation de BANI-BANI</h4>
+              <p>Une immersion au cœur de notre mission et de notre engagement
+                pour l’inclusion financière.</p>
+            </div>
+          </div>
+
+          <!-- VIDEO 2 YOUTUBE -->
+          <div class="video-slide">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/xmKdL7kNThA"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-caption">
+              <h4>Témoignages clients</h4>
+              <p>Des entrepreneurs et particuliers partagent leur expérience
+                avec nos services financiers.</p>
+            </div>
+          </div>
+
+          <!-- VIDEO 3 -->
+          <div class="video-slide">
+            <div class="video-frame">
+              <video src="./videos/video2.mp4" controls></video>
+            </div>
+            <div class="video-caption">
+              <h4>Nos actions sur le terrain</h4>
+              <p>Un aperçu de nos interventions locales et de notre proximité
+                avec les communautés.</p>
+            </div>
+          </div>
+
+          <!-- VIDEO 4 YOUTUBE -->
+          <div class="video-slide">
+            <div class="video-frame">
+              <iframe src="https://www.youtube.com/embed/VIDEO_ID_2" allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-caption">
+              <h4>Éducation financière</h4>
+              <p>Nos programmes de sensibilisation pour renforcer
+                l’autonomie financière.</p>
+            </div>
+          </div>
+
+          <!-- VIDEO 5 -->
+          <div class="video-slide">
+            <div class="video-frame">
+              <video src="./videos/video3.mp4" controls></video>
+            </div>
+            <div class="video-caption">
+              <h4>Vision & avenir</h4>
+              <p>Notre ambition pour un avenir financier plus inclusif
+                et durable.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <button class="video-nav next" aria-label="Vidéo suivante">❯</button>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    /* ===== VIDEO SLIDER ===== */
+    const slides = document.querySelectorAll('.video-slide');
+    const prevBtn = document.querySelector('.video-nav.prev');
+    const nextBtn = document.querySelector('.video-nav.next');
+    let currentIndex = 0;
+
+    function showSlide(index) {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[index].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      currentIndex = (currentIndex + 1) % slides.length;
+      showSlide(currentIndex);
+    });
+
+    /* NAVIGATION CLAVIER */
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowLeft') prevBtn.click();
+      if (e.key === 'ArrowRight') nextBtn.click();
+    });
+  </script>
+
+
+  <!-- ======== PROGRAMMES & PROJETS ======== -->
+  <section id="programmes" class="programmes-modern fade-in">
+    <div class="container">
+      <h2 class="text-center mb-5">Nos Programmes & Projets</h2>
+      <div class="row g-4">
+
+        <div class="col-md-4">
+          <div class="card-modern">
+            <div class="card-bg" style="background-image: url('./images/IMG_5302.jpg');"></div>
+            <div class="card-content">
+              <h5>Programme Tontine+</h5>
+              <p>Renforcez l’autonomie financière des membres grâce à notre programme innovant.</p>
+              <a href="DetailProjet.html" class="btn-modern">En savoir plus</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-modern">
+            <div class="card-bg" style="background-image: url('./images/IMG_5296.jpg');"></div>
+            <div class="card-content">
+              <h5>Projet Épargne Solidaire</h5>
+              <p>Facilitez l'accès au financement pour les petits entrepreneurs et communautés.</p>
+              <a href="DetailProjet.html" class="btn-modern">Découvrir</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card-modern">
+            <div class="card-bg" style="background-image: url('./images/0011.jpg');"></div>
+            <div class="card-content">
+              <h5>Bani-Bani Jeunes</h5>
+              <p>Un programme dédié aux jeunes pour développer et concrétiser leurs projets.</p>
+              <a href="DetailProjet.html" class="btn-modern">Participer</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= ACTUALITÉS ================= -->
+  <section class="news-section" id="news">
+    <div class="container">
+
+      <div class="section-header">
+        <h3 class="section-title">Actualités</h3>
+        <p class="section-subtitle">
+          Découvrez nos dernières informations, événements et opportunités
+        </p>
+      </div>
+
+      <div class="news-wrapper">
+
+        <button class="news-nav news-prev" aria-label="Précédent">‹</button>
+
+        <div class="news-track" id="newsTrack">
+
+          <!-- CARD -->
+          <article class="news-card">
+            <div class="news-image">
+              <span class="news-badge">Produit</span>
+              <img src="./images/006.jpg" alt="Nouveau produit d’épargne">
+            </div>
+            <div class="news-body">
+              <h4>Nouveau produit d’épargne</h4>
+              <p>Une solution innovante pensée pour soutenir les PME locales.</p>
+            </div>
+            <div class="news-footer">
+              <span>12 Mars 2025</span>
+              <a href="#">Lire plus →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-image">
+              <span class="news-badge">Événement</span>
+              <img src="./images/007.jpg" alt="Forum financier">
+            </div>
+            <div class="news-body">
+              <h4>Forum de l’inclusion financière</h4>
+              <p>Retour sur notre participation au forum national.</p>
+            </div>
+            <div class="news-footer">
+              <span>05 Mars 2025</span>
+              <a href="#">Lire plus →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-image">
+              <span class="news-badge">Institution</span>
+              <img src="./images/0010.jpg" alt="Nouvelle agence">
+            </div>
+            <div class="news-body">
+              <h4>Ouverture d’une nouvelle agence</h4>
+              <p>Une présence renforcée pour plus de proximité.</p>
+            </div>
+            <div class="news-footer">
+              <span>20 Février 2025</span>
+              <a href="#">Lire plus →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-image">
+              <span class="news-badge">Partenariat</span>
+              <img src="./images/gal1.jpg" alt="Partenariat stratégique">
+            </div>
+            <div class="news-body">
+              <h4>Nouveau partenariat stratégique</h4>
+              <p>Un engagement commun pour l’autonomisation économique.</p>
+            </div>
+            <div class="news-footer">
+              <span>02 Février 2025</span>
+              <a href="#">Lire plus →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-image">
+              <span class="news-badge">Partenariat</span>
+              <img src="./images/gal1.jpg" alt="Partenariat stratégique">
+            </div>
+            <div class="news-body">
+              <h4>Nouveau partenariat stratégique</h4>
+              <p>Un engagement commun pour l’autonomisation économique.</p>
+            </div>
+            <div class="news-footer">
+              <span>02 Février 2025</span>
+              <a href="#">Lire plus →</a>
+            </div>
+          </article>
+
+          <article class="news-card">
+            <div class="news-image">
+              <span class="news-badge">Partenariat</span>
+              <img src="./images/gal1.jpg" alt="Partenariat stratégique">
+            </div>
+            <div class="news-body">
+              <h4>Nouveau partenariat stratégique</h4>
+              <p>Un engagement commun pour l’autonomisation économique.</p>
+            </div>
+            <div class="news-footer">
+              <span>02 Février 2025</span>
+              <a href="#">Lire plus →</a>
+            </div>
+          </article>
+
+
+
+        </div>
+
+        <button class="news-nav news-next" aria-label="Suivant">›</button>
+
+      </div>
+
+      <div class="see-more">
+        <a href="News.html" class="btn-outline">Voir toutes les actualités</a>
+      </div>
+
+    </div>
+  </section>
+
+  <script>
+    /* ===== NEWS SLIDER (NO CONFLICT) ===== */
+    const newsTrack = document.getElementById('newsTrack');
+    const newsPrev = document.querySelector('.news-prev');
+    const newsNext = document.querySelector('.news-next');
+
+    const newsScrollAmount = 320;
+
+    newsNext.addEventListener('click', () => {
+      newsTrack.scrollBy({ left: newsScrollAmount, behavior: 'smooth' });
+    });
+
+    newsPrev.addEventListener('click', () => {
+      newsTrack.scrollBy({ left: -newsScrollAmount, behavior: 'smooth' });
+    });
+  </script>
+
+  <!-- ================= GALERIE ================= -->
+  <section id="galerie" class="galerie py-5">
+    <div class="container">
+
+      <!-- TITRE -->
+      <div class="text-center mb-5">
+        <h2 class="section-title">Galerie</h2>
+        <p class="section-subtitle">Nos événements et projets en images et vidéos</p>
+      </div>
+
+      <!-- GRID GALERIE -->
+      <div class="gallery-grid">
+        <!-- IMAGE 1 -->
+        <div class="gallery-item" data-type="image" data-caption="Conférence nationale">
+          <img src="./images/002.JPG" alt="Conférence nationale">
+        </div>
+
+        <!-- IMAGE 2 -->
+        <div class="gallery-item" data-type="image" data-caption="Forum régional">
+          <img src="./images/003.JPG" alt="Forum régional">
+        </div>
+
+        <!-- IMAGE 3 -->
+        <div class="gallery-item" data-type="image" data-caption="Journée de la microfinance">
+          <img src="./images/004.JPG" alt="Journée de la microfinance">
+        </div>
+
+        <!-- IMAGE 4 -->
+        <div class="gallery-item" data-type="image" data-caption="Conférence internationale">
+          <img src="./images/001.JPG" alt="Conférence internationale">
+        </div>
+
+        <!-- VIDEO 1 -->
+        <div class="gallery-item" data-type="video" data-caption="Présentation institutionnelle">
+          <video src="./videos/vid1.mp4" controls></video>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="gallery-item" data-type="video" data-caption="Présentation institutionnelle">
+          <video src="./videos/vid2.mp4" controls></video>
+        </div>
+
+        <!-- VIDEO 2 -->
+        <div class="gallery-item" data-type="video" data-caption="Présentation institutionnelle">
+          <video src="./videos/vid2.mp4" controls></video>
+        </div>
+
+        <!-- IMAGE 2 -->
+        <div class="gallery-item" data-type="image" data-caption="Forum régional">
+          <img src="./images/003.JPG" alt="Forum régional">
+        </div>
+
+      </div>
+
+      <!-- BOUTON VOIR PLUS -->
+      <div class="text-center mt-4">
+        <a href="Album.html" class="btn btn-see-more">Voir plus</a>
+      </div>
+
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+      <span class="close-btn">&times;</span>
+      <span class="prev-btn"><i class="fa-solid fa-chevron-left"></i></span>
+      <span class="next-btn"><i class="fa-solid fa-chevron-right"></i></span>
+
+      <div class="lightbox-content">
+        <img id="lightbox-img" src="" alt="">
+        <video id="lightbox-video" controls style="display:none;width:100%;max-height:90vh;"></video>
+        <div class="caption" id="lightbox-caption"></div>
+      </div>
+    </div>
+  </section>
+
   <style>
+    /* ================= GALERIE ================= */
+    .galerie {
+      background: #f7f9fc;
+      padding: 80px 20px;
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #0B1F44;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+      align-items: center;
+    }
+
+    .gallery-item {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .gallery-item img,
+    .gallery-item video {
+      display: block;
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      border-radius: 16px;
+    }
+
+    .btn-see-more {
+      padding: 12px 26px;
+      border-radius: 30px;
+      border: 2px solid #00AEEF;
+      color: #00AEEF;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn-see-more:hover {
+      background: #00AEEF;
+      color: #fff;
+    }
+
+    /* LIGHTBOX */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      flex-direction: column;
+    }
+
+    .lightbox-content {
+      position: relative;
+      max-width: 90%;
+      width: 900px;
+      text-align: center;
+    }
+
+    .lightbox-content img,
+    .lightbox-content video {
+      width: 100%;
+      max-height: 90vh;
+      border-radius: 16px;
+    }
+
+    .caption {
+      color: #fff;
+      text-align: center;
+      margin-top: 12px;
+      font-size: 0.95rem;
+    }
+
+    /* NAVIGATION LIGHTBOX */
+    .close-btn,
+    .prev-btn,
+    .next-btn {
+      position: absolute;
+      color: #fff;
+      font-size: 2rem;
+      cursor: pointer;
+      user-select: none;
+      transition: 0.3s;
+    }
+
+    .close-btn {
+      top: 20px;
+      right: 30px;
+    }
+
+    .prev-btn {
+      top: 50%;
+      left: 30px;
+      transform: translateY(-50%);
+    }
+
+    .next-btn {
+      top: 50%;
+      right: 30px;
+      transform: translateY(-50%);
+    }
+
+    .close-btn:hover,
+    .prev-btn:hover,
+    .next-btn:hover {
+      color: #00AEEF;
+    }
+
+    /* RESPONSIVE */
+    @media(max-width:768px) {
+
+      .gallery-item img,
+      .gallery-item video {
+        max-height: 200px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 par ligne pour tablette */
+      }
+    }
+
+    @media(max-width:480px) {
+
+      .gallery-item img,
+      .gallery-item video {
+        max-height: 150px;
+      }
+
+      .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 par ligne pour mobile */
+      }
+    }
+  </style>
+
+  <script>
+    /* ===== LIGHTBOX GALERIE ===== */
+    const galleryTrack = document.querySelectorAll('.gallery-item');
+    const lightboxEl = document.getElementById('lightbox');
+    const lightboxImgEl = document.getElementById('lightbox-img');
+    const lightboxVideoEl = document.getElementById('lightbox-video');
+    const lightboxCaptionEl = document.getElementById('lightbox-caption');
+    const closeBtnEl = document.querySelector('.close-btn');
+    const prevBtnEl = document.querySelector('.prev-btn');
+    const nextBtnEl = document.querySelector('.next-btn');
+
+    let currentGalleryIndex = 0;
+
+    function showLightbox(index) {
+      const item = galleryTrack[index];
+      const type = item.dataset.type;
+      const caption = item.dataset.caption;
+
+      lightboxEl.style.display = 'flex';
+      lightboxCaptionEl.textContent = caption;
+
+      if (type === 'image') {
+        lightboxImgEl.src = item.querySelector('img').src;
+        lightboxImgEl.style.display = 'block';
+        lightboxVideoEl.style.display = 'none';
+        lightboxVideoEl.pause();
+      } else {
+        lightboxVideoEl.src = item.querySelector('video').src;
+        lightboxVideoEl.style.display = 'block';
+        lightboxImgEl.style.display = 'none';
+        lightboxVideoEl.play();
+      }
+    }
+
+    function hideLightbox() {
+      lightboxEl.style.display = 'none';
+      lightboxVideoEl.pause();
+    }
+
+    function prevGalleryItem() {
+      currentGalleryIndex = (currentGalleryIndex - 1 + galleryTrack.length) % galleryTrack.length;
+      showLightbox(currentGalleryIndex);
+    }
+
+    function nextGalleryItem() {
+      currentGalleryIndex = (currentGalleryIndex + 1) % galleryTrack.length;
+      showLightbox(currentGalleryIndex);
+    }
+
+    galleryTrack.forEach((item, i) => {
+      item.addEventListener('click', () => {
+        currentGalleryIndex = i;
+        showLightbox(currentGalleryIndex);
+      });
+    });
+
+    closeBtnEl.addEventListener('click', hideLightbox);
+    prevBtnEl.addEventListener('click', prevGalleryItem);
+    nextBtnEl.addEventListener('click', nextGalleryItem);
+
+    /* Navigation clavier */
+    window.addEventListener('keydown', (e) => {
+      if (lightboxEl.style.display === 'flex') {
+        if (e.key === 'ArrowLeft') prevGalleryItem();
+        if (e.key === 'ArrowRight') nextGalleryItem();
+        if (e.key === 'Escape') hideLightbox();
+      }
+    });
+  </script>
+
+  <!-- ================= NOS DOCUMENTS ================= -->
+  <section id="documents" class="documents-section py-5">
+    <div class="container">
+
+      <!-- TITRE DE LA SECTION -->
+      <div class="text-center mb-5">
+        <h3 class="section-title">Nos Documents</h3>
+        <p class="section-subtitle">Consultez nos rapports officiels et ressources disponibles</p>
+      </div>
+
+      <!-- CARTE DOCUMENT -->
+      <div class="document-card mx-auto">
+        <div class="document-icon">
+          <i class="fas fa-file-pdf"></i>
+        </div>
+        <div class="document-info">
+          <h4 class="document-title">Rapport annuel de 2023</h4>
+          <div class="document-actions">
+            <a href="./documents/rapport2023.pdf" target="_blank" class="btn-doc">Lire le document</a>
+            <a href="Documents.html" class="btn-doc-outline">Voir tous les documents</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <style>
+    /* ================= NOS DOCUMENTS ================= */
+    .documents-section {
+      background: white;
+      padding: 80px 20px;
+      margin-top: 80px;
+    }
+
+    .documents-section .section-title {
+      font-size: 2.4rem;
+      font-weight: 700;
+      color: #0B1F44;
+    }
+
+    .documents-section .section-subtitle {
+      font-size: 1rem;
+      color: #666;
+      margin-top: 8px;
+    }
+
+    /* CARTE DOCUMENT */
+    .document-card {
+      display: flex;
+      align-items: center;
+      background: #0B1F44;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 25px 30px;
+      border-radius: 20px;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    }
+
+    .document-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.12);
+    }
+
+    .document-icon {
+      font-size: 3rem;
+      color: white;
+      /* rouge PDF classique */
+      margin-right: 25px;
+      flex-shrink: 0;
+    }
+
+    .document-info {
+      flex: 1;
+      color: rgb(132, 7, 7)
+    }
+
+    .document-title {
+      font-size: 1.4rem;
+      color: white;
+      margin-bottom: 15px;
+    }
+
+    .document-actions {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    /* BOUTONS */
+    .btn-doc {
+      padding: 10px 22px;
+      background: #00AEEF;
+      color: #fff;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-doc:hover {
+      background: #007bb5;
+    }
+
+    .btn-doc-outline {
+      padding: 10px 22px;
+      border: 2px solid #00AEEF;
+      border-radius: 30px;
+      color: #00AEEF;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn-doc-outline:hover {
+      background: #00AEEF;
+      color: #fff;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .document-card {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+      }
+
+      .document-icon {
+        margin-right: 0;
+      }
+
+      .document-actions {
+        justify-content: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .documents-section .section-title {
+        font-size: 1.9rem;
+      }
+
+      .documents-section .section-subtitle {
+        font-size: 0.95rem;
+      }
+
+      .document-title {
+        font-size: 1.2rem;
+      }
+
+      .btn-doc,
+      .btn-doc-outline {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+      }
+    }
+
+
+
+
+    /*CSS MEGA MENU
+
+ /* Mega menu container */
+    .mega-menu {
+      position: fixed;
+      top: 60px;
+      /* hauteur navbar */
+      left: 0;
+      right: 0;
+      background: #ffffff;
+    }
+
+    /* Titres */
+    .mega-title {
+      font-weight: 700;
+      color: #0B1F44;
+      margin-bottom: 15px;
+    }
+
+    /* Liens */
+    .mega-link {
+      display: block;
+      color: #0B1F44;
+      text-decoration: none;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .mega-link:hover {
+      color: #00AEEF;
+    }
+
+    /* Carte image */
+    .mega-card {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .mega-card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+    }
+
+    .mega-card-body {
+      padding: 15px;
+    }
+
+    .mega-card-body h6 {
+      font-weight: 700;
+      color: #0B1F44;
+    }
+
+    /* Mobile */
+    @media (max-width: 991px) {
+      .mega-menu {
+        position: static;
+      }
+    }
+
+
+    /* ================= SECTION HERITAGE ================= */
+
+    /* Mobile-first */
+    .heritage-section {
+      padding: 40px 0;
+      background: #33343415;
+      margin-top: 60px;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .section-title {
+      font-size: 1.9rem;
+      font-weight: 700;
+      color: #0B1F44;
+    }
+
+    .section-subtitle {
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: 6px;
+    }
+
+    /* Layout mobile */
+    .heritage-content {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 35px;
+    }
+
+    /* Image */
+    .heritage-image img {
+      width: 100%;
+      height: 42vh;
+      object-fit: cover;
+      border-radius: 16px;
+      box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Texte */
+    .heritage-title {
+      font-size: 1.35rem;
+      color: #0B1F44;
+      margin-bottom: 16px;
+      text-align: center;
+    }
+
+    .heritage-description {
+      font-size: 0.9rem;
+      line-height: 1.75;
+      color: #555;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    /* Valeurs */
+    .heritage-values {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .value-card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 24px 18px;
+      text-align: center;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.35s ease, box-shadow 0.35s ease;
+    }
+
+    .value-icon {
+      width: 54px;
+      height: 54px;
+      border-radius: 14px;
+      background: rgba(0, 174, 239, 0.1);
+      color: #00AEEF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      margin-bottom: 14px;
+    }
+
+    .value-card h5 {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #0B1F44;
+      margin-bottom: 8px;
+    }
+
+    .value-card p {
+      font-size: 0.82rem;
+      color: #666;
+      line-height: 1.6;
+    }
+
+    /* Lien carte */
+    .value-link {
+      background: #0B1F44;
+      text-decoration: none;
+    }
+
+    .value-link h5,
+    .value-link p,
+    .value-link .value-icon {
+      color: #fff;
+    }
+
+    .value-link .value-icon {
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    /* Hover uniquement desktop */
+    @media (hover:hover) {
+      .value-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    /* Tablette */
+    @media (min-width: 576px) {
+      .section-title {
+        font-size: 2.2rem;
+      }
+
+      .heritage-title {
+        font-size: 1.5rem;
+      }
+
+      .heritage-values {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .heritage-image img {
+        height: 45vh;
+      }
+    }
+
+    /* Desktop */
+    @media (min-width: 992px) {
+      .heritage-section {
+        padding: 60px 0;
+      }
+
+      .heritage-content {
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 50px;
+        align-items: center;
+      }
+
+      .heritage-title,
+      .heritage-description {
+        text-align: left;
+      }
+
+      .heritage-values {
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      .heritage-image img {
+        height: 80vh;
+        border-radius: 20px;
+      }
+    }
+
     /* ===== SECTION ABOUT ===== */
     .about {
       background: #f9fafc;
       position: relative;
+      margin-top: 80px;
     }
 
     /* ===== CARTES / PILIERS ===== */
@@ -735,149 +1597,117 @@
         font-size: 24px;
       }
     }
-  </style>
 
-
-
-  <section class="key-stats">
-    <div class="container stats-wrapper">
-
-      <!-- ===== PARTIE GAUCHE ===== -->
-      <div class="stats-highlight">
-        <h3>Nos chiffres clés</h3>
-
-        <div class="big-number">
-          700K<span>+</span>
-        </div>
-
-        <h4>Clients actifs</h4>
-
-        <p>
-          Plus de <strong>700 mille Togolais</strong> nous font confiance pour les
-          accompagner au quotidien dans leurs projets financiers.
-        </p>
-      </div>
-
-      <!-- ===== PARTIE DROITE ===== -->
-       <div class="contain">
-
-      
-      <div class="stats-cards">
-
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-wallet"></i>
-          </div>
-          <h5>Total actifs mobilisés</h5>
-          <span>120 Mds FCFA</span>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-coins"></i>
-          </div>
-          <h5>Total actifs collectés</h5>
-          <span>95 Mds FCFA</span>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-building"></i>
-          </div>
-          <h5>Nombre d’agences</h5>
-          <span>45+</span>
-        </div>
-
-        <div class="stat-card">
-          <div class="stat-icon">
-            <i class="fas fa-hand-holding-usd"></i>
-          </div>
-          <h5>Crédits accordés</h5>
-          <span>210 000+</span>
-        </div>
-
-      </div>
-      </div>
-
-    </div>
-  </section>
-  <style>
-    /* ===== SECTION CHIFFRES CLÉS ===== */
+    /* ================= SECTION STATS ================= */
     .key-stats {
-      background: linear-gradient(135deg, #0B1F44, #08162f);
-      padding: 90px 0;
-      color: #fff;
+      padding: 100px 0;
+      background: #33343415;
+      color: #07142d;
+      margin-bottom: 100px;
     }
 
+    /* TITRE */
+    .section-header {
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    .section-title {
+      font-size: 2.5rem;
+      font-weight: 800;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      opacity: 0.85;
+      margin-top: 6px;
+    }
+
+    /* LAYOUT */
     .stats-wrapper {
       display: grid;
-      grid-template-columns: 1.2fr 1fr;
+      grid-template-columns: 1.1fr 1fr;
       gap: 60px;
       align-items: center;
     }
 
-    /* ===== PARTIE GAUCHE ===== */
-    .stats-highlight h3 {
-      font-size: 2rem;
-      font-weight: 800;
+    /* ===== BLOC PRINCIPAL ===== */
+    .stats-highlight {
+      background: rgba(255, 255, 255, 0.06);
+      border-radius: 30px;
+      padding: 55px 50px;
+      backdrop-filter: blur(6px);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #fff;
+      ;
+      color: red;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding: 6px 16px;
+      border-radius: 20px;
       margin-bottom: 25px;
     }
 
     .big-number {
-      font-size: 4.8rem;
+      font-size: 5.8rem;
       font-weight: 900;
-      color: #00AEEF;
+      color: #0b1f44;
+      ;
       line-height: 1;
     }
 
-    .big-number span {
-      font-size: 2.5rem;
+    .plus {
+      font-size: 3.4rem;
+      font-weight: 900;
+      color: #0b1f44;
+      ;
     }
 
     .stats-highlight h4 {
-      font-size: 1.3rem;
-      margin: 15px 0;
+      font-size: 1.4rem;
+      margin: 20px 0 14px;
     }
 
     .stats-highlight p {
       font-size: 0.95rem;
-      line-height: 1.8;
-      color: rgba(255, 255, 255, 0.85);
-      max-width: 420px;
+      line-height: 1.9;
+      opacity: 0.9;
+      max-width: 440px;
     }
 
-    /* ===== PARTIE DROITE ===== */
+    /* ===== CARTES ===== */
     .stats-cards {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
+      gap: 26px;
     }
 
-    /* Card statistique */
     .stat-card {
-      background: rgba(255, 255, 255, 0.07);
-      border-radius: 18px;
-      padding: 28px 22px;
+      background: #0b1f44;
+      box-shadow: #000;
+      border-radius: 22px;
+      padding: 32px 22px;
       text-align: center;
-      backdrop-filter: blur(6px);
       transition: all 0.35s ease;
+      backdrop-filter: blur(6px);
     }
 
-    /* Icône */
     .stat-icon {
-      width: 55px;
-      height: 55px;
-      margin: 0 auto 15px;
-      border-radius: 14px;
+      width: 56px;
+      height: 56px;
+      margin: 0 auto 16px;
+      border-radius: 16px;
       background: rgba(0, 174, 239, 0.15);
-      color: #00AEEF;
+      color: white;
       display: flex;
       align-items: center;
       justify-content: center;
       font-size: 1.4rem;
     }
 
-    /* Texte */
     .stat-card h5 {
       font-size: 0.9rem;
       font-weight: 600;
@@ -885,297 +1715,276 @@
     }
 
     .stat-card span {
-      font-size: 1.2rem;
+      font-size: 2.8rem;
       font-weight: 800;
-      color: #fff;
+      display: block;
+      color: white;
     }
 
-    /* Hover */
-    .stat-card:hover {
-      transform: translateY(-8px);
-      background: rgba(255, 255, 255, 0.12);
+    .stat-card small {
+      font-size: 2.1rem;
+      opacity: 0.8;
+      color: white;
     }
 
-    .stat-card:hover .stat-icon {
-      background: #00AEEF;
-      color: #fff;
+    /* HOVER DESKTOP */
+    @media (hover:hover) {
+      .stat-card:hover {
+        transform: translateY(0.35s);
+        background: rgba(0, 0, 0, 0.12);
+      }
+
+      .stat-card:hover .stat-icon .stat-card span {
+        background: #0b1f44;
+        color: #fff;
+      }
     }
+
+    /* ================= ANIMATIONS ================= */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ================= RESPONSIVE ================= */
     @media (max-width: 992px) {
-  .stats-wrapper {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
+      .stats-wrapper {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
 
-  .stats-highlight p {
-    margin: auto;
-  }
-}
+      .stats-highlight p {
+        margin: auto;
+      }
+    }
 
-@media (max-width: 576px) {
-  .big-number {
-    font-size: 3.5rem;
-  }
+    @media (max-width: 576px) {
+      .section-title {
+        font-size: 2rem;
+      }
 
-  .stats-cards {
-    grid-template-columns: 1fr;
-  }
-}
+      .big-number {
+        font-size: 3.5rem;
+      }
 
-  </style>
+      .stats-cards {
+        grid-template-columns: 1fr;
+      }
 
-  <!-- ======== PROGRAMMES & PROJETS ======== -->
-  <section id="programmes" class="programmes-modern fade-in">
-    <div class="container">
-      <h2 class="text-center mb-5">Nos Programmes & Projets</h2>
-      <div class="row g-4">
-
-        <div class="col-md-4">
-          <div class="card-modern">
-            <div class="card-bg" style="background-image: url('./images/IMG_5302.jpg');"></div>
-            <div class="card-content">
-              <h5>Programme Tontine+</h5>
-              <p>Renforcez l’autonomie financière des membres grâce à notre programme innovant.</p>
-              <a href="DetailProjet.html" class="btn-modern">En savoir plus</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card-modern">
-            <div class="card-bg" style="background-image: url('./images/IMG_5296.jpg');"></div>
-            <div class="card-content">
-              <h5>Projet Épargne Solidaire</h5>
-              <p>Facilitez l'accès au financement pour les petits entrepreneurs et communautés.</p>
-              <a href="DetailProjet.html" class="btn-modern">Découvrir</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-4">
-          <div class="card-modern">
-            <div class="card-bg" style="background-image: url('./images/0011.jpg');"></div>
-            <div class="card-content">
-              <h5>Bani-Bani Jeunes</h5>
-              <p>Un programme dédié aux jeunes pour développer et concrétiser leurs projets.</p>
-              <a href="DetailProjet.html" class="btn-modern">Participer</a>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ======== ACTUALITÉS ======== -->
-  <section id="actualites" class="actualites-masonry fade-in">
-    <div class="container">
-      <h2 class="text-center mb-5">Dernières Actualités</h2>
-      <div class="masonry-grid">
-
-        <div class="actus-card">
-          <img src="./images/006.jpg" alt="Actu 1">
-          <div class="actus-body">
-            <h5>Nouvelle agence ouverte à Lomé</h5>
-            <p>Nous élargissons notre réseau pour être toujours plus proches de vous.</p>
-            <a href="DetailsActualite.html" class="btn-actus">Lire plus</a>
-          </div>
-        </div>
-
-        <div class="actus-card">
-          <img src="./images/007.jpg" alt="Actu 2">
-          <div class="actus-body">
-            <h5>Service digital amélioré</h5>
-            <p>Profitez de nos nouveaux outils numériques pour gérer vos comptes facilement et rapidement.</p>
-            <a href="DetailsActualite.html" class="btn-actus">Lire plus</a>
-          </div>
-        </div>
-
-        <div class="actus-card">
-          <img src="./images/0010.jpg" alt="Actu 3">
-          <div class="actus-body">
-            <h5>Programme de formation pour jeunes</h5>
-            <p>Encourageons les jeunes à développer leurs compétences et projets financiers, grâce à nos ateliers.</p>
-            <a href="DetailsActualite.html" class="btn-actus">Lire plus</a>
-          </div>
-        </div>
-        <div class="actus-card">
-          <img src="./images/gal1.jpg" alt="Actu 3">
-          <div class="actus-body">
-            <h5>Programme de formation pour jeunes</h5>
-            <p>Encourageons les jeunes à développer leurs compétences et projets financiers, grâce à nos ateliers.</p>
-            <a href="DetailsActualite.html" class="btn-actus">Lire plus</a>
-          </div>
-        </div>
+      .stats-highlight {
+        padding: 42px 28px;
+      }
+    }
 
 
-      </div>
-    </div>
-  </section>
-  <section class="news-section">
-    <div class="container">
-      <h3 class="section-title">Actualités</h3>
-      <p class="section-subtitle">
-        Découvrez nos dernières informations, événements et opportunités
-      </p>
 
-      <div class="news-slider-wrapper">
-        <button class="slide-btn prev-btn" aria-label="Précédent">‹</button>
+    /* ================= VIDEO SECTION ================= */
+    .video-section {
+      padding: 90px 0;
+      background: #f7f9fc;
+    }
 
-        <div class="news-slider" id="newsSlider">
-          <!-- Card -->
-          <article class="news-card">
-            <div class="news-image">
-              <span class="news-badge">Produit</span>
-              <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc" alt="">
-            </div>
-            <div class="news-body">
-              <h4>Nouveau produit d’épargne</h4>
-              <p>Une solution innovante conçue pour les PME.</p>
-            </div>
-            <div class="news-footer">
-              <span>12 Mars 2025</span>
-              <a href="#">Voir plus →</a>
-            </div>
-          </article>
-          <article class="news-card">
-            <div class="news-image">
-              <span class="news-badge">Produit</span>
-              <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc" alt="">
-            </div>
-            <div class="news-body">
-              <h4>Nouveau produit d’épargne</h4>
-              <p>Une solution innovante conçue pour les PME.</p>
-            </div>
-            <div class="news-footer">
-              <span>12 Mars 2025</span>
-              <a href="#">Voir plus →</a>
-            </div>
-          </article>
-          <article class="news-card">
-            <div class="news-image">
-              <span class="news-badge">Produit</span>
-              <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc" alt="">
-            </div>
-            <div class="news-body">
-              <h4>Nouveau produit d’épargne</h4>
-              <p>Une solution innovante conçue pour les PME.</p>
-            </div>
-            <div class="news-footer">
-              <span>12 Mars 2025</span>
-              <a href="#">Voir plus →</a>
-            </div>
-          </article>
-          <article class="news-card">
-            <div class="news-image">
-              <span class="news-badge">Produit</span>
-              <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc" alt="">
-            </div>
-            <div class="news-body">
-              <h4>Nouveau produit d’épargne</h4>
-              <p>Une solution innovante conçue pour les PME.</p>
-            </div>
-            <div class="news-footer">
-              <span>12 Mars 2025</span>
-              <a href="#">Voir plus →</a>
-            </div>
-          </article>
-          <article class="news-card">
-            <div class="news-image">
-              <span class="news-badge">Produit</span>
-              <img src="https://images.unsplash.com/photo-1601597111158-2fceff292cdc" alt="">
-            </div>
-            <div class="news-body">
-              <h4>Nouveau produit d’épargne</h4>
-              <p>Une solution innovante conçue pour les PME.</p>
-            </div>
-            <div class="news-footer">
-              <span>12 Mars 2025</span>
-              <a href="#">Voir plus →</a>
-            </div>
-          </article>
-
-
-          <!-- Duplique les cards ici -->
-        </div>
-
-        <button class="slide-btn next-btn" aria-label="Suivant">›</button>
-      </div>
-
-      <div class="see-more">
-        <a href="News.html" class="btn-outline">Voir toutes les actualités</a>
-      </div>
-    </div>
-  </section>
-  <style>
-    /* ================= ACTUALITES ================= */
-    .news-section {
-      padding: 80px 0;
-      background: #f9fafc;
+    /* TITRE */
+    .section-header {
+      margin-bottom: 50px;
     }
 
     .section-title {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: #0B1F44;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      color: #666;
+      margin-top: 6px;
+    }
+
+    /* SLIDER */
+    .video-slider-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .video-slider {
+      width: 100%;
+      max-width: 900px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .video-slide {
+      display: none;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .video-slide.active {
+      display: flex;
+    }
+
+    /* VIDEO FORMAT */
+    .video-frame {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      background: #000;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .video-frame video,
+    .video-frame iframe {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* TEXTE SOUS VIDEO */
+    .video-caption {
       text-align: center;
-      font-size: 2.2rem;
+      padding: 0 15px;
+    }
+
+    .video-caption h4 {
+      font-size: 1.2rem;
       font-weight: 700;
+      color: #0B1F44;
+      margin-bottom: 6px;
+    }
+
+    .video-caption p {
+      font-size: 0.9rem;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* NAVIGATION */
+    .video-nav {
+      background: #0B1F44;
+      color: #fff;
+      border: none;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1.2rem;
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
+      transition: background 0.3s ease;
+      z-index: 10;
+    }
+
+    .video-nav:hover {
+      background: #00AEEF;
+    }
+
+    .video-nav.prev {
+      left: -20px;
+    }
+
+    .video-nav.next {
+      right: -20px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .video-nav {
+        display: none;
+      }
+
+      .section-title {
+        font-size: 2rem;
+      }
+    }
+
+
+
+    /* ================= ACTUALITÉS ================= */
+    .news-section {
+      padding: 90px 0;
+      background: #f7f9fc;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+
+    .section-title {
+      font-size: 2.4rem;
+      font-weight: 800;
       color: #0B1F44;
     }
 
     .section-title::after {
       content: "";
-      width: 80px;
+      width: 70px;
       height: 4px;
       background: #00AEEF;
       display: block;
-      margin: 12px auto 0;
-      border-radius: 3px;
+      margin: 14px auto 0;
+      border-radius: 4px;
     }
 
     .section-subtitle {
-      text-align: center;
+      font-size: 0.95rem;
       color: #666;
-      margin: 15px auto 45px;
-      max-width: 600px;
+      max-width: 620px;
+      margin: 15px auto 0;
     }
 
-    /* Slider */
-    .news-slider-wrapper {
+    /* WRAPPER */
+    .news-wrapper {
       position: relative;
       display: flex;
       align-items: center;
     }
 
-    .news-slider {
+    /* TRACK */
+    .news-track {
       display: flex;
-      gap: 25px;
+      gap: 26px;
       overflow-x: auto;
       scroll-behavior: smooth;
       scrollbar-width: none;
-      padding: 10px;
+      padding: 10px 5px;
     }
 
-    .news-slider::-webkit-scrollbar {
+    .news-track::-webkit-scrollbar {
       display: none;
     }
 
-    /* Card */
+    /* CARD */
     .news-card {
-      min-width: 280px;
+      min-width: 300px;
       background: #fff;
-      border-radius: 16px;
+      border-radius: 18px;
       overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
       transition: transform .35s ease, box-shadow .35s ease;
     }
 
     .news-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 22px 50px rgba(0, 0, 0, 0.15);
     }
 
-    /* Image */
+    /* IMAGE */
     .news-image {
       position: relative;
-      height: 180px;
+      height: 190px;
     }
 
     .news-image img {
@@ -1184,26 +1993,27 @@
       object-fit: cover;
     }
 
-    /* Badge */
+    /* BADGE */
     .news-badge {
       position: absolute;
-      top: 12px;
-      left: 12px;
+      top: 14px;
+      left: 14px;
       background: #00AEEF;
       color: #fff;
       font-size: 0.75rem;
-      padding: 5px 10px;
-      border-radius: 20px;
+      padding: 6px 12px;
+      border-radius: 30px;
       font-weight: 600;
     }
 
-    /* Body */
+    /* BODY */
     .news-body {
-      padding: 18px;
+      padding: 20px;
     }
 
     .news-body h4 {
       font-size: 1.05rem;
+      font-weight: 700;
       color: #0B1F44;
       margin-bottom: 8px;
     }
@@ -1214,12 +2024,12 @@
       line-height: 1.6;
     }
 
-    /* Footer */
+    /* FOOTER */
     .news-footer {
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 14px 18px;
+      padding: 14px 20px;
       border-top: 1px solid #eee;
       font-size: 0.85rem;
     }
@@ -1238,35 +2048,43 @@
       color: #0B1F44;
     }
 
-    /* Navigation */
-    .slide-btn {
-      width: 48px;
-      height: 48px;
+    /* NAV */
+    .news-nav {
+      width: 46px;
+      height: 46px;
       border-radius: 50%;
       background: #0B1F44;
       color: #fff;
       border: none;
       font-size: 1.8rem;
       cursor: pointer;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      position: absolute;
+      top: 40%;
+      transform: translateY(-50%);
       transition: .3s;
+      z-index: 10;
     }
 
-    .slide-btn:hover {
+    .news-nav:hover {
       background: #00AEEF;
-      transform: scale(1.1);
     }
 
-    /* Voir plus */
+    .news-prev {
+      left: -22px;
+    }
+
+    .news-next {
+      right: -22px;
+    }
+
+    /* SEE MORE */
     .see-more {
       text-align: center;
-      margin-top: 35px;
+      margin-top: 45px;
     }
 
     .btn-outline {
-      padding: 10px 22px;
+      padding: 12px 26px;
       border: 2px solid #00AEEF;
       border-radius: 30px;
       color: #00AEEF;
@@ -1280,117 +2098,19 @@
       color: #fff;
     }
 
-    /* Responsive */
+    /* RESPONSIVE */
     @media (max-width: 768px) {
-      .slide-btn {
+      .news-nav {
         display: none;
+      }
+
+      .section-title {
+        font-size: 2rem;
       }
     }
   </style>
 
 
-
-  <!-- Contenu de la galerie -->
-  <section id="galerie" class="galerie fade-in py-5">
-    <div class="container">
-      <!-- Titre de la section -->
-      <div class="text-center mb-5">
-        <h2>Galerie</h2>
-        <p class="subtitle">Nos événements et projets en images et vidéos</p>
-      </div>
-
-      <!-- Contenu de la galerie -->
-      <div class="row g-4 gallery-grid">
-
-        <!-- Carte 1 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Conférence nationale">
-          <div class="gallery-card">
-            <img src="./images/002.JPG" alt="Conférence nationale">
-            <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
-          </div>
-        </div>
-
-        <!-- Carte 2 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image" data-caption="Forum régional">
-          <div class="gallery-card">
-            <img src="./images/003.JPG" alt="Forum régional">
-            <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
-          </div>
-        </div>
-
-        <!-- Carte 3 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image"
-          data-caption="Journée de la microfinance">
-          <div class="gallery-card">
-            <img src="./images/004.JPG" alt="Journée de la microfinance">
-            <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
-          </div>
-        </div>
-
-        <!-- Carte 4 -->
-        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="image"
-          data-caption="Conférence internationale">
-          <div class="gallery-card">
-            <img src="./images/001.JPG" alt="Conférence internationale">
-            <div class="overlay"><i class="fa-solid fa-magnifying-glass"></i></div>
-          </div>
-        </div>
-
-        <!-- Carte 5 - vidéo -->
-        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video"
-          data-caption="Présentation institutionnelle">
-          <div class="gallery-card video-card">
-            <iframe src="./videos/vid1.mp4" title="Vidéo 1" allowfullscreen></iframe>
-            <div class="overlay"><i class="fa-solid fa-play"></i></div>
-          </div>
-        </div>
-
-        <!-- Carte 6 - vidéo -->
-        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video"
-          data-caption="Présentation institutionnelle">
-          <div class="gallery-card video-card">
-            <iframe src="./videos/vid1.mp4" title="Vidéo 2" allowfullscreen></iframe>
-            <div class="overlay"><i class="fa-solid fa-play"></i></div>
-          </div>
-        </div>
-
-        <!-- Carte 7 - vidéo -->
-        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video"
-          data-caption="Présentation institutionnelle">
-          <div class="gallery-card video-card">
-            <iframe src="./videos/vid3.mp4" title="Vidéo 3" allowfullscreen></iframe>
-            <div class="overlay"><i class="fa-solid fa-play"></i></div>
-          </div>
-        </div>
-
-        <!-- Carte 8 - vidéo -->
-        <div class="col-lg-3 col-md-4 col-sm-6 gallery-item" data-category="video"
-          data-caption="Présentation institutionnelle">
-          <div class="gallery-card video-card">
-            <iframe src="./videos/vid4.mp4" title="Vidéo 4" allowfullscreen></iframe>
-            <div class="overlay"><i class="fa-solid fa-play"></i></div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Bouton Voir plus -->
-      <div class="text-center mt-4">
-        <a href="Album.html" class="btn btn-see-more">Voir plus</a>
-      </div>
-    </div>
-    <div class="lightbox" id="lightbox">
-      <span class="close-btn">&times;</span>
-      <span class="prev-btn"><i class="fa-solid fa-chevron-left"></i></span>
-      <span class="next-btn"><i class="fa-solid fa-chevron-right"></i></span>
-
-      <div class="lightbox-content">
-        <img id="lightbox-img" src="" alt="">
-        <div class="caption" id="lightbox-caption"></div>
-      </div>
-    </div>
-
-  </section>
 
   <!--Partenaires-->
 
@@ -1571,9 +2291,6 @@
     </div>
   </section>
 
-
-
-
   <!-- ======== GOOGLE MAPS ======== -->
   <div class="map-section fade-in">
     <h4 class="text-center mb-3">Nous localiser</h4>
@@ -1674,7 +2391,7 @@
     </div>
 
     <div class="footer-bottom">
-      &copy; 2025 BANI-BANI. Tous droits réservés.
+      &copy; 2017-2025 BANI-BANI. Tous droits réservés.
     </div>
   </footer>
 
@@ -1683,34 +2400,7 @@
 
   <!-- ======== SCRIPTS ======== -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-    // Animation fade-in au scroll
-    const elements = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) entry.target.classList.add('visible');
-      });
-    });
-    elements.forEach(el => observer.observe(el));
 
-    // Animation compteur
-    const counters = document.querySelectorAll('.counter');
-    counters.forEach(counter => {
-      counter.innerText = '0';
-      const updateCounter = () => {
-        const target = +counter.getAttribute('data-target');
-        const count = +counter.innerText;
-        const increment = target / 200;
-        if (count < target) {
-          counter.innerText = Math.ceil(count + increment);
-          setTimeout(updateCounter, 10);
-        } else {
-          counter.innerText = target;
-        }
-      };
-      updateCounter();
-    });
-  </script>
   <script>
     window.addEventListener('scroll', () => {
       const navbar = document.querySelector('.navbar');
@@ -1766,7 +2456,7 @@
     }, 4000);
 
     /* Hero slider */
-    const slides = document.querySelectorAll(".slide");
+    const slid = document.querySelectorAll(".slide");
     let heroIndex = 0;
     setInterval(() => {
       slides[heroIndex].classList.remove("active");
@@ -1775,7 +2465,7 @@
     }, 10000);
   </script>
   <script>
-    const slider = document.getElementById('newsSlider');
+    const slide = document.getElementById('newsSlider');
     const next = document.querySelector('.next-btn');
     const prev = document.querySelector('.prev-btn');
 
@@ -1795,7 +2485,6 @@
       if (e.key === 'ArrowLeft') prev.click();
     });
   </script>
-
 </body>
 
 </html>
